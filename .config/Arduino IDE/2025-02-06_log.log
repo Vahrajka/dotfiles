@@ -1,0 +1,259 @@
+2025-02-06 21:41:58 Arduino IDE 2.3.4
+2025-02-06 21:41:58 Checking for frontend application configuration customizations. Module path: /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/electron-main.js, destination 'package.json': /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/package.json
+2025-02-06 21:41:58 Setting 'theia.frontend.config.appVersion' application configuration value to: "2.3.4" (type of string)
+2025-02-06 21:41:58 Setting 'theia.frontend.config.cliVersion' application configuration value to: "1.1.1" (type of string)
+2025-02-06 21:41:58 Setting 'theia.frontend.config.buildDate' application configuration value to: "2024-12-03T10:51:12.539Z" (type of string)
+2025-02-06 21:41:58 Frontend application configuration after modifications: {"applicationName":"Arduino IDE","defaultTheme":{"light":"arduino-theme","dark":"arduino-theme-dark"},"defaultIconTheme":"none","electron":{"windowOptions":{}},"defaultLocale":"","validatePreferencesSchema":false,"preferences":{"window.title":"${rootName}${activeEditorShort}${appName}","files.autoSave":"afterDelay","editor.minimap.enabled":false,"editor.tabSize":2,"editor.scrollBeyondLastLine":false,"editor.quickSuggestions":{"other":false,"comments":false,"strings":false},"editor.maxTokenizationLineLength":500,"editor.bracketPairColorization.enabled":false,"breadcrumbs.enabled":false,"workbench.tree.renderIndentGuides":"none","explorer.compactFolders":false},"appVersion":"2.3.4","cliVersion":"1.1.1","buildDate":"2024-12-03T10:51:12.539Z"}
+2025-02-06 21:41:58 Starting backend process. PID: 19024
+2025-02-06 21:41:59 Using browser-only version of superagent in non-browser environment
+2025-02-06 21:41:59 Configuration directory URI: 'file:///home/zayd/.arduinoIDE'
+2025-02-06 21:41:59 Configuring to accept webviews on '^.+\.webview\..+$' hostname.
+2025-02-06 21:41:59 2025-02-06T20:41:59.062Z root INFO Backend Object.initialize: 2.5 ms [Finished 0.346 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.062Z root INFO Backend Object.configure: 2.0 ms [Finished 0.346 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.062Z root INFO Backend s.onStart: 1.0 ms [Finished 0.346 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.062Z root INFO Backend s.configure: 0.2 ms [Finished 0.361 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.063Z root INFO Backend d.onStart: 0.1 ms [Finished 0.361 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.063Z root INFO Backend d.configure: 0.1 ms [Finished 0.361 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.063Z root INFO Backend d.initialize: 15.1 ms [Finished 0.361 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.064Z root INFO Backend c.onStart: 0.2 ms [Finished 0.361 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.064Z root INFO Backend a.configure: 0.3 ms [Finished 0.362 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z config INFO >>> Initializing CLI configuration...
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend c.initialize: 0.3 ms [Finished 0.362 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend x.onStart: 0.4 ms [Finished 0.362 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z config INFO Loading CLI configuration from /home/zayd/.arduinoIDE/arduino-cli.yaml...
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z daemon INFO Starting daemon from /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/resources/arduino-cli...
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend a.initialize: 0.3 ms [Finished 0.363 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend w.onStart: 0.5 ms [Finished 0.363 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend r.configure: 0.9 ms [Finished 0.363 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z discovery-log INFO start
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z discovery-log INFO start new deferred
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend d.initialize: 0.2 ms [Finished 0.363 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend y.onStart: 1.0 ms [Finished 0.364 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend r.configure: 0.9 ms [Finished 0.364 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend a.onStart: 0.3 ms [Finished 0.365 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend h.configure: 0.2 ms [Finished 0.365 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend s.configure: 0.1 ms [Finished 0.365 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.065Z root INFO Backend l.configure: 0.0 ms [Finished 0.365 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.067Z root INFO Theia app listening on http://127.0.0.1:42811.
+2025-02-06 21:41:59 2025-02-06T20:41:59.067Z root INFO Finished starting backend application: 1.3 ms [Finished 0.366 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.072Z root WARN The local plugin referenced by local-dir:/home/zayd/.arduinoIDE/plugins does not exist.
+2025-02-06 21:41:59 2025-02-06T20:41:59.072Z root WARN The local plugin referenced by local-dir:/home/zayd/.arduinoIDE/extensions does not exist.
+2025-02-06 21:41:59 2025-02-06T20:41:59.081Z daemon INFO time="2025-02-06T21:41:59+01:00" level=info msg="arduino-cli version 1.1.1"
+time="2025-02-06T21:41:59+01:00" level=info msg="Using config file: /home/zayd/.arduinoIDE/arduino-cli.yaml"
+time="2025-02-06T21:41:59+01:00" level=info msg="Executing `arduino-cli daemon`"
+Daemon is now listening on 127.0.0.1:44275
+{"IP":"127.0.0.1","Port":"44275"}
+2025-02-06 21:41:59 2025-02-06T20:41:59.081Z daemon INFO Daemon is running.
+2025-02-06 21:41:59 2025-02-06T20:41:59.085Z config INFO Loading CLI configuration from /home/zayd/.arduinoIDE/arduino-cli.yaml...
+2025-02-06 21:41:59 2025-02-06T20:41:59.094Z config INFO Loaded CLI configuration: {"board_manager":{"additional_urls":[]}}
+2025-02-06 21:41:59 2025-02-06T20:41:59.094Z config INFO Loading fallback CLI configuration to get 'directories.data' and 'directories.user'
+2025-02-06 21:41:59 2025-02-06T20:41:59.097Z daemon INFO time="2025-02-06T21:41:59+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/libraries/library_index.tar.bz2"
+2025-02-06 21:41:59 2025-02-06T20:41:59.099Z config INFO Loaded fallback CLI configuration: {"directories":{"user":"/home/zayd/Arduino","data":"/home/zayd/.arduino15"}}
+2025-02-06 21:41:59 2025-02-06T20:41:59.099Z config INFO Merged CLI configuration with the fallback: {"directories":{"user":"/home/zayd/Arduino","data":"/home/zayd/.arduino15"},"board_manager":{"additional_urls":[]}}
+2025-02-06 21:41:59 2025-02-06T20:41:59.099Z config INFO Loaded the CLI configuration.
+2025-02-06 21:41:59 2025-02-06T20:41:59.099Z config INFO Mapped the CLI configuration: {"dataDirUri":"file:///home/zayd/.arduino15","sketchDirUri":"file:///home/zayd/Arduino","additionalUrls":[],"network":"none","locale":"en"}
+2025-02-06 21:41:59 2025-02-06T20:41:59.100Z config INFO Validating the CLI configuration...
+2025-02-06 21:41:59 2025-02-06T20:41:59.100Z config INFO The CLI config is valid.
+2025-02-06 21:41:59 2025-02-06T20:41:59.100Z config INFO <<< Initialized the CLI configuration.
+2025-02-06 21:41:59 2025-02-06T20:41:59.103Z root INFO Resolve plugins list: 38.4 ms [Finished 0.403 s after backend start]
+2025-02-06 21:41:59 2025-02-06T20:41:59.610Z root INFO Deploy plugins list: 38.4 ms [Finished 0.910 s after backend start]
+2025-02-06 21:41:59 Opening channel for service path '/services/electron-window'.
+2025-02-06 21:41:59 Opening channel for service path '/services/ide-updater'.
+2025-02-06 21:42:00 2025-02-06T20:42:00.180Z root WARN Frontend a.configure took longer than the expected maximum 100 milliseconds: 186.1 ms [Finished 0.980 s after frontend start]
+2025-02-06 21:42:00 2025-02-06T20:42:00.182Z root WARN A command editor.action.toggleStickyScroll is already registered.
+2025-02-06 21:42:03 2025-02-06T20:42:03.671Z daemon INFO time="2025-02-06T21:42:03+01:00" level=info msg="Updating index" url="https://downloads.arduino.cc/packages/package_index.tar.bz2"
+time="2025-02-06T21:42:03+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/packages/package_index.tar.bz2"
+2025-02-06 21:42:05 2025-02-06T20:42:05.444Z daemon INFO time="2025-02-06T21:42:05+01:00" level=info msg="Checking signature" index=/home/zayd/.arduino15/package_index.json signatureFile=/home/zayd/.arduino15/package_index.json.sig trusted=true
+2025-02-06 21:42:05 2025-02-06T20:42:05.445Z daemon INFO time="2025-02-06T21:42:05+01:00" level=info msg="Loading hardware from: /home/zayd/.arduino15/packages"
+2025-02-06 21:42:05 2025-02-06T20:42:05.445Z daemon INFO time="2025-02-06T21:42:05+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/tools/ctags-5.8-arduino11-pm-x86_64-pc-linux-gnu.tar.bz2"
+2025-02-06 21:42:06 2025-02-06T20:42:06.376Z daemon INFO time="2025-02-06T21:42:06+01:00" level=info msg="Installing tool" Tool="builtin:ctags@5.8-arduino11"
+2025-02-06 21:42:06 2025-02-06T20:42:06.393Z daemon INFO time="2025-02-06T21:42:06+01:00" level=info msg="Skipping tool configuration." Tool="builtin:ctags@5.8-arduino11"
+time="2025-02-06T21:42:06+01:00" level=info msg="Tool installed" Tool="builtin:ctags@5.8-arduino11"
+2025-02-06 21:42:06 2025-02-06T20:42:06.393Z daemon INFO time="2025-02-06T21:42:06+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/discovery/dfu-discovery/dfu-discovery_v0.1.2_Linux_64bit.tar.gz"
+2025-02-06 21:42:07 2025-02-06T20:42:07.531Z daemon INFO time="2025-02-06T21:42:07+01:00" level=info msg="Installing tool" Tool="builtin:dfu-discovery@0.1.2"
+2025-02-06 21:42:07 2025-02-06T20:42:07.555Z daemon INFO time="2025-02-06T21:42:07+01:00" level=info msg="Skipping tool configuration." Tool="builtin:dfu-discovery@0.1.2"
+time="2025-02-06T21:42:07+01:00" level=info msg="Tool installed" Tool="builtin:dfu-discovery@0.1.2"
+time="2025-02-06T21:42:07+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/discovery/mdns-discovery/mdns-discovery_v1.0.9_Linux_64bit.tar.gz"
+2025-02-06 21:42:08 2025-02-06T20:42:08.256Z daemon INFO time="2025-02-06T21:42:08+01:00" level=info msg="Installing tool" Tool="builtin:mdns-discovery@1.0.9"
+2025-02-06 21:42:08 2025-02-06T20:42:08.285Z daemon INFO time="2025-02-06T21:42:08+01:00" level=info msg="Skipping tool configuration." Tool="builtin:mdns-discovery@1.0.9"
+time="2025-02-06T21:42:08+01:00" level=info msg="Tool installed" Tool="builtin:mdns-discovery@1.0.9"
+time="2025-02-06T21:42:08+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/discovery/serial-discovery/serial-discovery_v1.4.1_Linux_64bit.tar.gz"
+2025-02-06 21:42:08 2025-02-06T20:42:08.730Z daemon INFO time="2025-02-06T21:42:08+01:00" level=info msg="Installing tool" Tool="builtin:serial-discovery@1.4.1"
+2025-02-06 21:42:08 2025-02-06T20:42:08.750Z daemon INFO time="2025-02-06T21:42:08+01:00" level=info msg="Skipping tool configuration." Tool="builtin:serial-discovery@1.4.1"
+time="2025-02-06T21:42:08+01:00" level=info msg="Tool installed" Tool="builtin:serial-discovery@1.4.1"
+time="2025-02-06T21:42:08+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/monitor/serial-monitor/serial-monitor_v0.14.1_Linux_64bit.tar.gz"
+2025-02-06 21:42:09 2025-02-06T20:42:09.449Z daemon INFO time="2025-02-06T21:42:09+01:00" level=info msg="Installing tool" Tool="builtin:serial-monitor@0.14.1"
+2025-02-06 21:42:09 2025-02-06T20:42:09.470Z daemon INFO time="2025-02-06T21:42:09+01:00" level=info msg="Skipping tool configuration." Tool="builtin:serial-monitor@0.14.1"
+time="2025-02-06T21:42:09+01:00" level=info msg="Tool installed" Tool="builtin:serial-monitor@0.14.1"
+time="2025-02-06T21:42:09+01:00" level=info msg="Loading tools from dir: /home/zayd/.arduino15/packages/builtin/tools"
+2025-02-06 21:42:09 2025-02-06T20:42:09.470Z daemon INFO time="2025-02-06T21:42:09+01:00" level=info msg="Loaded tool" tool="builtin:ctags@5.8-arduino11"
+time="2025-02-06T21:42:09+01:00" level=info msg="Loaded tool" tool="builtin:dfu-discovery@0.1.2"
+time="2025-02-06T21:42:09+01:00" level=info msg="Loaded tool" tool="builtin:mdns-discovery@1.0.9"
+time="2025-02-06T21:42:09+01:00" level=info msg="Loaded tool" tool="builtin:serial-discovery@1.4.1"
+time="2025-02-06T21:42:09+01:00" level=info msg="Loaded tool" tool="builtin:serial-monitor@0.14.1"
+2025-02-06 21:42:09 2025-02-06T20:42:09.471Z daemon INFO time="2025-02-06T21:42:09+01:00" level=info msg="Loading libraries index file" index=/home/zayd/.arduino15/library_index.json
+2025-02-06 21:42:09 2025-02-06T20:42:09.595Z daemon INFO time="2025-02-06T21:42:09+01:00" level=info msg="Adding libraries dir" dir=/home/zayd/.arduino15/libraries isSingleLibrary=false location=ide
+time="2025-02-06T21:42:09+01:00" level=info msg="Adding libraries dir" dir=/home/zayd/Arduino/libraries isSingleLibrary=false location=user
+2025-02-06 21:42:09 2025-02-06T20:42:09.597Z discovery-log INFO start resolved watching
+2025-02-06 21:42:09 2025-02-06T20:42:09.610Z root WARN Frontend c.onStart took longer than the expected maximum 100 milliseconds: 9373.0 ms [Finished 10.424 s after frontend start]
+2025-02-06 21:42:09 2025-02-06T20:42:09.626Z root INFO Start frontend contributions: 9677.2 ms [Finished 10.428 s after frontend start]
+2025-02-06 21:42:09 2025-02-06T20:42:09.626Z root INFO Changed application state from 'init' to 'started_contributions'.
+2025-02-06 21:42:09 2025-02-06T20:42:09.631Z root INFO Changed application state from 'started_contributions' to 'attached_shell'.
+2025-02-06 21:42:09 2025-02-06T20:42:09.631Z root INFO >>> Restoring the layout state...
+2025-02-06 21:42:09 2025-02-06T20:42:09.631Z root INFO <<< Nothing to restore.
+2025-02-06 21:42:09 2025-02-06T20:42:09.647Z root INFO Initialize the workbench layout: 12.8 ms [Finished 10.460 s after frontend start]
+2025-02-06 21:42:09 2025-02-06T20:42:09.654Z root INFO Changed application state from 'attached_shell' to 'initialized_layout'.
+2025-02-06 21:42:09 2025-02-06T20:42:09.676Z root INFO [780ecd84-3dda-4493-bbbb-28b73ea9c0a8] Waiting for backend deployment: 65.3 ms [Finished 10.490 s after frontend start]
+2025-02-06 21:42:10 2025-02-06T20:42:10.028Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171) starting instance
+2025-02-06 21:42:10 2025-02-06T20:42:10.371Z root INFO [780ecd84-3dda-4493-bbbb-28b73ea9c0a8] Sync of 23 plugins: 678.3 ms [Finished 11.169 s after frontend start]
+2025-02-06 21:42:10 2025-02-06T20:42:10.371Z root INFO [780ecd84-3dda-4493-bbbb-28b73ea9c0a8] Loading plugin contributions
+2025-02-06 21:42:10 2025-02-06T20:42:10.371Z root INFO [780ecd84-3dda-4493-bbbb-28b73ea9c0a8] Load contributions of 23 plugins: 16.7 ms [Finished 11.186 s after frontend start]
+2025-02-06 21:42:10 2025-02-06T20:42:10.470Z root WARN 'cpp' language is remapped from 'source.cpp.embedded.macro' to 'source.cpp' scope
+2025-02-06 21:42:10 2025-02-06T20:42:10.470Z root WARN a registered grammar configuration for 'cpp' language is overridden
+2025-02-06 21:42:10 2025-02-06T20:42:10.670Z root INFO Replace loading indicator with ready workbench UI (animation): 902.7 ms [Finished 11.373 s after frontend start]
+2025-02-06 21:42:10 2025-02-06T20:42:10.670Z root INFO Changed application state from 'initialized_layout' to 'ready'.
+2025-02-06 21:42:10 2025-02-06T20:42:10.670Z root WARN Linked preference "workbench.colorCustomizations" not found.
+2025-02-06 21:42:10 2025-02-06T20:42:10.671Z root INFO Frontend application start: 10493.1 ms [Finished 11.950 s after backend start]
+2025-02-06 21:42:10 Checking for update
+2025-02-06 21:42:10 Generated new staging user ID: ad8fb158-37cb-5792-89e0-4b7bbe8a50f8
+2025-02-06 21:42:10 2025-02-06T20:42:10.812Z daemon INFO time="2025-02-06T21:42:10+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/libraries/library_index.tar.bz2"
+2025-02-06 21:42:10 2025-02-06T20:42:10.813Z daemon INFO time="2025-02-06T21:42:10+01:00" level=info msg="Updating index" url="https://downloads.arduino.cc/packages/package_index.tar.bz2"
+time="2025-02-06T21:42:10+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/packages/package_index.tar.bz2"
+2025-02-06 21:42:10 2025-02-06T20:42:10.814Z root INFO core-client-provider [library-index] Downloading index: library_index.tar.bz2
+
+2025-02-06 21:42:10 2025-02-06T20:42:10.814Z root INFO core-client-provider [platform-index] Downloading index: package_index.tar.bz2
+
+2025-02-06 21:42:10 2025-02-06T20:42:10.878Z root INFO ---- DURATION: search took 80.051 ms. Args: [{"query":"Arduino_BuiltIn"}] ----
+2025-02-06 21:42:10 2025-02-06T20:42:10.885Z root INFO >>> Starting boards package installation... {
+  id: 'arduino:avr',
+  name: 'Arduino AVR Boards',
+  summary: 'Boards included in this package:',
+  description: 'Arduino Yún, Arduino UNO, Arduino UNO Mini, Arduino UNO WiFi, Arduino Diecimila, Arduino Nano, Arduino Mega, Arduino Mega ADK, Arduino Leonardo, Arduino Leonardo Ethernet, Arduino Micro, Arduino Esplora, Arduino Mini, Arduino Ethernet, Arduino Fio, Arduino BT, Arduino LilyPad USB, Arduino LilyPad, Arduino Pro, Arduino ATMegaNG, Arduino Robot Control, Arduino Robot Motor, Arduino Gemma, Adafruit Circuit Playground, Arduino Yún Mini, Arduino Industrial 101, Linino One',
+  boards: [
+    { name: 'Arduino Yún', fqbn: '' },
+    { name: 'Arduino UNO', fqbn: '' },
+    { name: 'Arduino UNO Mini', fqbn: '' },
+    { name: 'Arduino UNO WiFi', fqbn: '' },
+    { name: 'Arduino Diecimila', fqbn: '' },
+    { name: 'Arduino Nano', fqbn: '' },
+    { name: 'Arduino Mega', fqbn: '' },
+    { name: 'Arduino Mega ADK', fqbn: '' },
+    { name: 'Arduino Leonardo', fqbn: '' },
+    { name: 'Arduino Leonardo Ethernet', fqbn: '' },
+    { name: 'Arduino Micro', fqbn: '' },
+    { name: 'Arduino Esplora', fqbn: '' },
+    { name: 'Arduino Mini', fqbn: '' },
+    { name: 'Arduino Ethernet', fqbn: '' },
+    { name: 'Arduino Fio', fqbn: '' },
+    { name: 'Arduino BT', fqbn: '' },
+    { name: 'Arduino LilyPad USB', fqbn: '' },
+    { name: 'Arduino LilyPad', fqbn: '' },
+    { name: 'Arduino Pro', fqbn: '' },
+    { name: 'Arduino ATMegaNG', fqbn: '' },
+    { name: 'Arduino Robot Control', fqbn: '' },
+    { name: 'Arduino Robot Motor', fqbn: '' },
+    { name: 'Arduino Gemma', fqbn: '' },
+    { name: 'Adafruit Circuit Playground', fqbn: '' },
+    { name: 'Arduino Yún Mini', fqbn: '' },
+    { name: 'Arduino Industrial 101', fqbn: '' },
+    { name: 'Linino One', fqbn: '' }
+  ],
+  types: [ 'Arduino' ],
+  moreInfoLink: 'https://www.arduino.cc/',
+  author: 'Arduino',
+  deprecated: false,
+  availableVersions: [
+    '1.8.6',  '1.8.5',  '1.8.4',
+    '1.8.3',  '1.8.2',  '1.8.1',
+    '1.6.23', '1.6.22', '1.6.21',
+    '1.6.20', '1.6.19', '1.6.18',
+    '1.6.17', '1.6.16', '1.6.15',
+    '1.6.14', '1.6.13', '1.6.12',
+    '1.6.11', '1.6.10', '1.6.9',
+    '1.6.8',  '1.6.7',  '1.6.6',
+    '1.6.5',  '1.6.4',  '1.6.3',
+    '1.6.2'
+  ],
+  index: 0
+}
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO stop
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO >>> Stopping boards watcher...
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO Canceling boards watcher...
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO disposing requesting cancel
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO disposing canceled
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO error received
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO cancel error received!
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO stop received event: either end or cancel
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO stop stopped
+2025-02-06 21:42:10 2025-02-06T20:42:10.887Z discovery-log INFO received end
+2025-02-06 21:42:10 2025-02-06T20:42:10.888Z daemon INFO time="2025-02-06T21:42:10+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/tools/arduinoOTA-1.3.0-linux_amd64.tar.bz2"
+2025-02-06 21:42:10 2025-02-06T20:42:10.995Z root ERROR ---- !!!SLOW!!! DURATION: search took 231.015 ms. Args: [{"type":"Updatable"}] ----
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.linux as cortex-debug.armToolchainPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.osx as cortex-debug.armToolchainPath is null
+Conflict in settings file Default: Ignoring cortex-debug.armToolchainPath.windows as cortex-debug.armToolchainPath is null
+Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.linux as cortex-debug.JLinkGDBServerPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.osx as cortex-debug.JLinkGDBServerPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.JLinkGDBServerPath.windows as cortex-debug.JLinkGDBServerPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.openocdPath.linux as cortex-debug.openocdPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.openocdPath.osx as cortex-debug.openocdPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.openocdPath.windows as cortex-debug.openocdPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.linux as cortex-debug.pyocdPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.osx as cortex-debug.pyocdPath is null
+Conflict in settings file Default: Ignoring cortex-debug.pyocdPath.windows as cortex-debug.pyocdPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.linux as cortex-debug.PEGDBServerPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.osx as cortex-debug.PEGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.PEGDBServerPath.windows as cortex-debug.PEGDBServerPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stutilPath.linux as cortex-debug.stutilPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.stutilPath.osx as cortex-debug.stutilPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stutilPath.windows as cortex-debug.stutilPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.linux as cortex-debug.stlinkPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.osx as cortex-debug.stlinkPath is null
+Conflict in settings file Default: Ignoring cortex-debug.stlinkPath.windows as cortex-debug.stlinkPath is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.000Z root ERROR [hosted-plugin: 19171] Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.linux as cortex-debug.stm32cubeprogrammer is null
+Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.osx as cortex-debug.stm32cubeprogrammer is null
+Conflict in settings file Default: Ignoring cortex-debug.stm32cubeprogrammer.windows as cortex-debug.stm32cubeprogrammer is null
+2025-02-06 21:42:11 2025-02-06T20:42:11.005Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): PluginManagerExtImpl/init()
+2025-02-06 21:42:11 2025-02-06T20:42:11.006Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-arduino-api@0.1.2 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.044Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(cortex-debug@1.5.1 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.045Z root INFO [hosted-plugin: 19171] Debugger contribution has been registered: cortex-debug
+2025-02-06 21:42:11 2025-02-06T20:42:11.045Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-arduino-tools@0.1.3 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.046Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(cpp@1.52.1 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.047Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(json@1.46.1 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.047Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(json-language-features@1.46.1 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.048Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-bg@1.48.3 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.049Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-cs@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.049Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-de@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.050Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-es@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.050Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-fr@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.051Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-hu@1.48.3 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.051Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-it@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.051Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-ja@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.051Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-ko@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.051Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-nl@1.48.3 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.052Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-pl@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.052Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-pt-BR@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.052Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-ru@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.052Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-tr@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.052Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-uk@1.48.3 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.052Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-zh-hans@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.052Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): initializing(vscode-language-pack-zh-hant@1.80.0 with /home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/lib/backend/plugin-vscode-init)
+2025-02-06 21:42:11 2025-02-06T20:42:11.092Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): PluginManagerExtImpl/loadPlugin(/home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/plugins/vscode-arduino-api/extension/dist/extension.js)
+2025-02-06 21:42:11 2025-02-06T20:42:11.095Z root INFO [hosted-plugin: 19171] calling activation function on Arduino IDE API for VS Code extensions
+2025-02-06 21:42:11 2025-02-06T20:42:11.099Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): PluginManagerExtImpl/loadPlugin(/home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/plugins/vscode-builtin-json-language-features/extension/client/dist/jsonMain)
+2025-02-06 21:42:11 2025-02-06T20:42:11.116Z root INFO [hosted-plugin: 19171] calling activation function on JSON Language Features (built-in)
+2025-02-06 21:42:11 2025-02-06T20:42:11.118Z root INFO [780ecd84-3dda-4493-bbbb-28b73ea9c0a8] Starting plugins.
+2025-02-06 21:42:11 2025-02-06T20:42:11.129Z root INFO [hosted-plugin: 19171] PLUGIN_HOST(19171): PluginManagerExtImpl/loadPlugin(/home/zayd/Downloads/arduino-ide_2.3.4_Linux_64bit/resources/app/plugins/cortex-debug/extension/dist/extension.js)
+2025-02-06 21:42:11 2025-02-06T20:42:11.147Z root INFO [hosted-plugin: 19171] Debug configuration provider has been registered: cortex-debug, trigger: 1
+2025-02-06 21:42:11 2025-02-06T20:42:11.148Z root INFO [hosted-plugin: 19171] calling activation function on Cortex-Debug
+2025-02-06 21:42:11 2025-02-06T20:42:11.149Z root INFO [hosted-plugin: 19171] GDB server console created
+2025-02-06 21:42:11 2025-02-06T20:42:11.152Z root INFO [780ecd84-3dda-4493-bbbb-28b73ea9c0a8] Start of 23 plugins: 773.9 ms [Finished 11.968 s after frontend start]
+2025-02-06 21:42:11 2025-02-06T20:42:11.503Z daemon INFO time="2025-02-06T21:42:11+01:00" level=info msg="Starting download" url="https://downloads.arduino.cc/tools/avr-gcc-7.3.0-atmel3.6.1-arduino7-x86_64-pc-linux-gnu.tar.bz2"
+2025-02-06 21:42:12 Update for version 2.3.4 is not available (latest version: 2.3.4, downgrade is allowed).
+2025-02-06 21:42:15 isTempSketch: true. Input was /tmp/.arduinoIDE-unsaved202516-19024-pu6tur.gtrr/sketch_feb6a
+2025-02-06 21:42:15 Ignored marking workspace as a closed sketch. The sketch was detected as temporary. Workspace URI: file:///tmp/.arduinoIDE-unsaved202516-19024-pu6tur.gtrr/sketch_feb6a.
+2025-02-06 21:42:15 isTempSketch: true. Input was /tmp/.arduinoIDE-unsaved202516-19024-pu6tur.gtrr/sketch_feb6a
+2025-02-06 21:42:15 Ignored marking workspace as a closed sketch. The sketch was detected as temporary. Workspace URI: file:///tmp/.arduinoIDE-unsaved202516-19024-pu6tur.gtrr/sketch_feb6a.
+2025-02-06 21:42:15 Closing channel on service path '/services/electron-window'.
+2025-02-06 21:42:15 Closing channel on service path '/services/ide-updater'.
+2025-02-06 21:42:15 Stored workspaces roots: 
+2025-02-06 21:42:15 No sketches were scheduled for deletion.

@@ -1,0 +1,337 @@
+{
+   "checksum": "5da653947f6183051fef400cce7114b8",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "12802760202000000",
+            "date_last_used": "0",
+            "guid": "7c2baa36-7a74-4634-840a-9a9bbe1eb5a4",
+            "id": "5",
+            "name": "Fedora Docs",
+            "type": "url",
+            "url": "https://docs.fedoraproject.org/"
+         }, {
+            "date_added": "13011814824000000",
+            "date_last_used": "0",
+            "guid": "c232f17f-0704-46f8-92a4-d07a82d81319",
+            "id": "6",
+            "name": "Fedora Magazine",
+            "type": "url",
+            "url": "https://fedoramagazine.org/"
+         }, {
+            "children": [ {
+               "date_added": "13148231190000000",
+               "date_last_used": "0",
+               "guid": "173d5dcd-5ad3-49c6-8e38-e2faeb967da1",
+               "id": "8",
+               "name": "Get Fedora",
+               "type": "url",
+               "url": "https://getfedora.org/"
+            }, {
+               "children": [ {
+                  "date_added": "13148231272000000",
+                  "date_last_used": "0",
+                  "guid": "7f133182-9b66-4ccf-861c-b62f027fc4c9",
+                  "id": "10",
+                  "name": "Fedora Spins (Desktop Environments)",
+                  "type": "url",
+                  "url": "https://spins.fedoraproject.org/"
+               }, {
+                  "date_added": "13148231299000000",
+                  "date_last_used": "0",
+                  "guid": "9abd9476-4161-47b5-b6b6-580ab668357b",
+                  "id": "11",
+                  "name": "Fedora Labs (Functional Bundles)",
+                  "type": "url",
+                  "url": "https://labs.fedoraproject.org/"
+               }, {
+                  "date_added": "13148231321000000",
+                  "date_last_used": "0",
+                  "guid": "a808aa8c-fe9d-4384-9e0e-6674b19cfb32",
+                  "id": "12",
+                  "name": "Fedora ARM (IoT and More!)",
+                  "type": "url",
+                  "url": "https://arm.fedoraproject.org/"
+               }, {
+                  "date_added": "13148231312000000",
+                  "date_last_used": "0",
+                  "guid": "351bc3bd-c9f5-4c49-8201-064a59f2eb11",
+                  "id": "13",
+                  "name": "Fedora Alternative Downloads",
+                  "type": "url",
+                  "url": "https://alt.fedoraproject.org/"
+               } ],
+               "date_added": "13379247950166817",
+               "date_last_used": "0",
+               "date_modified": "0",
+               "guid": "5cbbb5c9-61b1-4727-a857-ff5721f4822a",
+               "id": "9",
+               "name": "More Downloads",
+               "type": "folder"
+            }, {
+               "date_added": "13263664122000000",
+               "date_last_used": "0",
+               "guid": "ed43d426-1cff-4b7c-84b4-d95b1dce456e",
+               "id": "14",
+               "name": "About the Fedora Project",
+               "type": "url",
+               "url": "https://docs.fedoraproject.org/en-US/project/"
+            }, {
+               "date_added": "12995981748000000",
+               "date_last_used": "0",
+               "guid": "09bcec68-47c3-473c-abc5-d9e32a32c95f",
+               "id": "15",
+               "name": "Ask Fedora (Community Support)",
+               "type": "url",
+               "url": "https://ask.fedoraproject.org/"
+            }, {
+               "date_added": "13188964273000000",
+               "date_last_used": "0",
+               "guid": "76a5f6d1-47b4-4ace-8b0b-0f6064b9d992",
+               "id": "16",
+               "name": "Fedora Discussion",
+               "type": "url",
+               "url": "https://discussion.fedoraproject.org/"
+            }, {
+               "date_added": "12821148801000000",
+               "date_last_used": "0",
+               "guid": "c40e5cc7-3032-48d8-af85-29eedca25ffa",
+               "id": "17",
+               "name": "Planet Fedora",
+               "type": "url",
+               "url": "http://fedoraplanet.org/"
+            }, {
+               "date_added": "13108164118000000",
+               "date_last_used": "0",
+               "guid": "0783ef61-960e-4579-aa57-ad7aa16b53e8",
+               "id": "18",
+               "name": "Fedora Community Blog",
+               "type": "url",
+               "url": "https://communityblog.fedoraproject.org/"
+            }, {
+               "date_added": "12885683018000000",
+               "date_last_used": "0",
+               "guid": "ca754d9a-8294-4477-ae11-ebeb0fa3a9a1",
+               "id": "19",
+               "name": "Get involved with the Fedora Project",
+               "type": "url",
+               "url": "https://whatcanidoforfedora.org/"
+            } ],
+            "date_added": "13379247950166752",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "4be04a21-b26d-4028-a572-a995e27d215d",
+            "id": "7",
+            "name": "Fedora Project",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12775441496000000",
+               "date_last_used": "0",
+               "guid": "89f8d5c6-7f86-4c27-a967-b29db2addfba",
+               "id": "21",
+               "name": "Fedora Forum",
+               "type": "url",
+               "url": "https://forums.fedoraforum.org/"
+            }, {
+               "date_added": "13148230562000000",
+               "date_last_used": "0",
+               "guid": "189ace55-442e-46aa-9587-d734b8ab6a87",
+               "id": "22",
+               "name": "r/Fedora on Reddit",
+               "type": "url",
+               "url": "https://www.reddit.com/r/Fedora/"
+            }, {
+               "date_added": "13148230872000000",
+               "date_last_used": "0",
+               "guid": "a041a47f-dbb8-4556-92db-ef6b0b3da6ea",
+               "id": "23",
+               "name": "Fedora on Facebook",
+               "type": "url",
+               "url": "https://www.facebook.com/TheFedoraProject"
+            }, {
+               "date_added": "13148230902000000",
+               "date_last_used": "0",
+               "guid": "151361da-f2eb-4f1d-8bfd-897f8a7495f6",
+               "id": "24",
+               "name": "@fedora on Twitter",
+               "type": "url",
+               "url": "https://twitter.com/fedora"
+            }, {
+               "date_added": "13148231025000000",
+               "date_last_used": "0",
+               "guid": "5e9901fe-ce06-4090-8ea9-5a2755c6be2d",
+               "id": "25",
+               "name": "Fedora Telegram",
+               "type": "url",
+               "url": "https://telegram.me/fedoranews"
+            }, {
+               "date_added": "13148231055000000",
+               "date_last_used": "0",
+               "guid": "cc5a47b0-a4c8-4f33-83e9-30d5f124ff22",
+               "id": "26",
+               "name": "Fedora on Discord Chat",
+               "type": "url",
+               "url": "https://discordapp.com/invite/fedora"
+            }, {
+               "date_added": "13148231141000000",
+               "date_last_used": "0",
+               "guid": "1e4cba4a-770b-43b7-b58c-4980e16c75c1",
+               "id": "27",
+               "name": "Fedora on Diaspora",
+               "type": "url",
+               "url": "https://diasp.org/u/fedora"
+            }, {
+               "date_added": "13148231122000000",
+               "date_last_used": "0",
+               "guid": "e3ab7188-842a-47b6-9b5e-973f42ff28c5",
+               "id": "28",
+               "name": "#fedora IRC via Riot",
+               "type": "url",
+               "url": "https://riot.im/app/#/room/#fedora:matrix.org"
+            } ],
+            "date_added": "13379247950167005",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "3180a79d-ac34-4f34-bd84-05356c55bda9",
+            "id": "20",
+            "name": "User Communities",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12821147748000000",
+               "date_last_used": "0",
+               "guid": "f4e8b806-2da7-46a5-8330-c747791c0eea",
+               "id": "30",
+               "name": "Red Hat",
+               "type": "url",
+               "url": "https://www.redhat.com/"
+            }, {
+               "date_added": "12821147789000000",
+               "date_last_used": "0",
+               "guid": "54138087-52f9-4373-aa2c-d14624845bed",
+               "id": "31",
+               "name": "JBoss Developer Community",
+               "type": "url",
+               "url": "https://developer.jboss.org/welcome"
+            }, {
+               "date_added": "13148230622000000",
+               "date_last_used": "0",
+               "guid": "a8b3090e-c88f-4573-b8af-67f17223965a",
+               "id": "32",
+               "name": "OpenShift Origin",
+               "type": "url",
+               "url": "https://www.openshift.org/"
+            }, {
+               "date_added": "13379198259000000",
+               "date_last_used": "0",
+               "guid": "88483c2b-e3c3-44a3-83bd-9b03da1a8470",
+               "id": "33",
+               "name": "OpenSource.com",
+               "type": "url",
+               "url": "https://opensource.com/"
+            }, {
+               "date_added": "12913761071000000",
+               "date_last_used": "0",
+               "guid": "afd6a8f5-7ab6-44b4-a2f2-c18b6d268529",
+               "id": "34",
+               "name": "The Open Source Way",
+               "type": "url",
+               "url": "https://www.theopensourceway.org/"
+            } ],
+            "date_added": "13379247950167158",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "e062dca8-c38d-4ae6-847d-47c76e9f28a2",
+            "id": "29",
+            "name": "Red Hat",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "12821148001000000",
+               "date_last_used": "0",
+               "guid": "eda1a6be-f8d0-4673-9075-882a730f8ddf",
+               "id": "36",
+               "name": "Wikipedia",
+               "type": "url",
+               "url": "https://www.wikipedia.org/"
+            }, {
+               "date_added": "12885682606000000",
+               "date_last_used": "0",
+               "guid": "96dc0a44-916e-4481-ae9d-51e6adbb1392",
+               "id": "37",
+               "name": "LibriVox",
+               "type": "url",
+               "url": "https://librivox.org/"
+            }, {
+               "date_added": "12913761071000000",
+               "date_last_used": "0",
+               "guid": "2a0839b0-ca52-4b5e-be2c-1fdac7ca9481",
+               "id": "38",
+               "name": "Open Clip Art",
+               "type": "url",
+               "url": "https://openclipart.org/"
+            }, {
+               "date_added": "13379198259000000",
+               "date_last_used": "0",
+               "guid": "e057921f-3535-4b84-b84a-fcf3baffb16b",
+               "id": "39",
+               "name": "Free Sound",
+               "type": "url",
+               "url": "https://www.freesound.org/"
+            }, {
+               "date_added": "12821148376000000",
+               "date_last_used": "0",
+               "guid": "df5eabac-a049-4151-8f07-3b94a47a2dcd",
+               "id": "40",
+               "name": "Creative Commons",
+               "type": "url",
+               "url": "https://creativecommons.org/"
+            }, {
+               "date_added": "13144176060000000",
+               "date_last_used": "0",
+               "guid": "86b5949c-2a33-40c7-9279-7e20b62187d5",
+               "id": "41",
+               "name": "Pixabay",
+               "type": "url",
+               "url": "https://pixabay.com/"
+            } ],
+            "date_added": "13379247950167240",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "17f7d1bb-ce4f-495a-be5a-853e33b4a022",
+            "id": "35",
+            "name": "Free Content",
+            "type": "folder"
+         } ],
+         "date_added": "13379247944084603",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13379247944084606",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13379247944084608",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

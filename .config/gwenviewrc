@@ -1,0 +1,33 @@
+[General]
+LastUsedVersion=210800
+SideBarPage=operations
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/wallpapers/mark-harpur-K2s_YE031CA-unsplash.jpg
+File10[$e]=$HOME/wallpapers/wallhaven-exkg7w.jpg
+File2[$e]=$HOME/wallpapers/wallhaven-2yp6gg.png
+File3[$e]=$HOME/wallpapers/wallhaven-3lp2md.jpg
+File4[$e]=$HOME/wallpapers/vincentiu-solomon-Z4wF0h47fy8-unsplash.jpg
+File5[$e]=$HOME/wallpapers/wallhaven-zy1ooy.jpg
+File6[$e]=$HOME/wallpapers/wallhaven-vq7k2p.png
+File7[$e]=$HOME/wallpapers/wallhaven-vq7ve5.jpg
+File8[$e]=$HOME/wallpapers/wallhaven-zywe5j.jpg
+File9[$e]=$HOME/wallpapers/wallhaven-zywwky.jpg
+Name1[$e]=mark-harpur-K2s_YE031CA-unsplash.jpg
+Name10[$e]=wallhaven-exkg7w.jpg
+Name2[$e]=wallhaven-2yp6gg.png
+Name3[$e]=wallhaven-3lp2md.jpg
+Name4[$e]=vincentiu-solomon-Z4wF0h47fy8-unsplash.jpg
+Name5[$e]=wallhaven-zy1ooy.jpg
+Name6[$e]=wallhaven-vq7k2p.png
+Name7[$e]=wallhaven-vq7ve5.jpg
+Name8[$e]=wallhaven-zywe5j.jpg
+Name9[$e]=wallhaven-zywwky.jpg
+
+[SideBar]
+InformationSplitterSizes=219,256
+IsVisible ViewMode=true
+SideBarSplitterSizes=249,798
