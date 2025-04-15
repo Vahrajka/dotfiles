@@ -1,6 +1,0 @@
-[General]
-theme=catppuccin-macchiato-pink
-
-[Applications]
-Default=dolphin
-catppuccin-macchiato-pink=dolphin, okular
