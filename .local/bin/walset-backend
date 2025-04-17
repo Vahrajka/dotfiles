@@ -13,7 +13,7 @@ notify-send "Changing Theme" "Applying new wallpaper and updating colors, please
 
 # Set wallpaper
 
-swww img "$IMAGE" --transationetype="wipe" --transition-step=1 --transition-fps="60"
+swww img "$IMAGE" --transition-type wipe --transition-step 3 --transition-fps 60
 
 # Generate pywal colors
 wal -i "$IMAGE" -n -e
@@ -22,8 +22,9 @@ wal -i "$IMAGE" -n -e
 pkill waybar
 waybar > /dev/null 2>&1 &
 
+#change lockscreen
+wal-cache
 # Refresh swaync
-
 pkill swaync
 swaync > /dev/null 2>&1 &
 
