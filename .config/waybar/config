@@ -12,6 +12,7 @@
         "modules-right": [
             "tray",
             "pulseaudio",
+	"bluetooth",
         "network",
         "temperature",
         "battery",
@@ -82,6 +83,10 @@
             "format-linked": "{ifname} (No IP) ",
             "format-disconnected": " ⚠ ",
             "on-click": "kitty -e nmtui"
+        },
+        "bluetooth": {
+	    "format": " {status}",
+            "on-click": "blueman-manager"
         },
         "pulseaudio": {
             "format": "{icon}  {volume}%",

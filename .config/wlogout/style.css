@@ -1,19 +1,7 @@
-/*
-          _                         _    
-__      _| | ___   __ _  ___  _   _| |_  
-\ \ /\ / / |/ _ \ / _` |/ _ \| | | | __| 
- \ V  V /| | (_) | (_| | (_) | |_| | |_  
-  \_/\_/ |_|\___/ \__, |\___/ \__,_|\__| 
-                  |___/                  
- 
-by Stephan Raabe (2023) 
------------------------------------------------------ 
-*/
-
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
-@import './colors-wlogout.css';
+@import '/home/zayd/.cache/wal/colors-waybar.css';
 
 /* -----------------------------------------------------
  * General 
@@ -34,7 +22,7 @@ window {
 
 button {
 	transition: all ease-in-out 0.2s;
-	color: #cba6f7;
+	color: @color0;
     font-size:20px;
 
     background-repeat: no-repeat;
@@ -42,8 +30,8 @@ button {
 	background-size: 10%;
 
 	border-style: solid;
-	background-color:  #1e1e2e;
-	border: 3px solid #DDB6DE;
+	background-color:  @color1;
+	border: 3px solid @color2;
 	border-radius: 20px;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -53,7 +41,7 @@ button {
 button:active,
 button:hover {
     /* color: #d79921; */
-	background-color: #313244;
+	background-color: @color3;
 	background-size: 12%;
 	transition: all ease-in-out 0.2s;
 	/* border: 3px solid #cba6f7; */
@@ -68,37 +56,37 @@ Buttons
 #lock {
 	margin: 10px;
 	/* border-radius: 20px; */
-	background-image: image(url("icons/lock.png"));
+	background-image: image(url("/home/zayd/.config/wlogout/icons/lock.png"));
 }
 
 #logout {
 	margin: 10px;
 	/* border-radius: 20px; */
-	background-image: image(url("icons/logout.png"));
+	background-image: image(url("/home/zayd/.config/wlogout/icons/logout.png"));
 }
 
 #suspend {
 	margin: 10px;
 	/* border-radius: 20px; */
-	background-image: image(url("icons/suspend.png"));
+	background-image: image(url("/home/zayd/.config/wlogout/icons/suspend.png"));
 }
 
 #hibernate {
 	margin: 10px;
 	/* border-radius: 20px; */
-	background-image: image(url("icons/hibernate.png"));
+	background-image: image(url("/home/zayd/.config/wlogout/icons/hibernate.png"));
 }
 
 #shutdown {
 	margin: 10px;
 	/* border-radius: 20px; */
-	background-image: image(url("icons/shutdown.png"));
+	background-image: image(url("/home/zayd/.config/wlogout/icons/shutdown.png"));
 }
 
 #reboot {
 	margin: 10px;
 	/* border-radius: 20px; */
-	background-image: image(url("icons/reboot.png"));
+	background-image: image(url("/home/zayd/.config/wlogout/icons/reboot.png"));
 }
 
 #reboot:hover,

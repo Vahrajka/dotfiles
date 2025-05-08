@@ -32,5 +32,8 @@ alias fastfetch='fastfetch -c .config/fastfetch/conf'
 export GTK_THEME=Catppuccin-Macchiato-Standard-Mauve-Dark
 
 ### RANDOM COLOR SCRIPT ###
-colorscript random
+#colorscript random
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
 
