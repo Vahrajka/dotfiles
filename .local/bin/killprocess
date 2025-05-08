@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+kitty -e bash -c "ps aux | fzf | awk '{print $2}' | xargs killall"
+

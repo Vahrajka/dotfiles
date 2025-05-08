@@ -14,9 +14,11 @@
             "pulseaudio",
 	"bluetooth",
         "network",
+	"backlight",
         "temperature",
         "battery",
         "clock",
+ 	"custom/poweroff"
         ],
         "hyprland/window": {
             "format": "{}",
@@ -43,6 +45,11 @@
                "icon-size": 20,
                "spacing": 8
          },
+ 	"custom/poweroff": {
+            "tooltip": false,
+            "format": "󰐥",
+            "on-click": "wlogout"
+        },
         "clock": {
             "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
             "format-alt": "{:%Y-%m-%d}"

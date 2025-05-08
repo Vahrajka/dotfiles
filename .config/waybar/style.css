@@ -53,8 +53,14 @@ button:hover {
 #pulseaudio {
     color: @color1;
 }
+#custom-poweroff {
+    color:  @color1;
+}
 
 #network {
+    color: @color2;
+}
+#backlight {
     color: @color2;
 }
 #bluetooth {
@@ -81,8 +87,10 @@ button:hover {
 #network,
 #bluetooth,
 #temperature,
+#backlight,
 #battery,
 #clock,
+#custom-poweroff,
 #window,
 #tray,
 .modules-left,
@@ -90,6 +98,11 @@ button:hover {
     background-color: @color0;
     padding: 0 10px;
 }
+#custom-poweroff {
+    border-radius: 10px;
+    margin: 0 0 0 10 ;
+}
+
 #tray {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
