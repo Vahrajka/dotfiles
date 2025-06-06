@@ -4,18 +4,21 @@
         "margin-right": 10,
         "height" : 30,
         "modules-left": [
-            "hyprland/window"
+            "hyprland/window",
+	    "backlight",
+            "temperature",
+	    "cpu",
+	    "memory",
+	    "custom/wayves"
         ],
         "modules-center": [
             "hyprland/workspaces",
         ],
         "modules-right": [
-            "tray",
-            "pulseaudio",
+        "tray",
 	"bluetooth",
         "network",
-	"backlight",
-        "temperature",
+        "pulseaudio",
         "battery",
         "clock",
  	"custom/poweroff"
@@ -55,11 +58,8 @@
             "format-alt": "{:%Y-%m-%d}"
         },
         "cpu": {
-            "format": "  {usage}%",
+            "format": "  {usage}%",
             "tooltip": false
-        },
-        "memory": {
-            "format": "{}%  "
         },
         "temperature": {
             "critical-threshold": 80,
@@ -80,7 +80,7 @@
         },
 	"backlight": {
   	    "device": "intel_backlight",
-            "format": "{percent}% {icon}",
+            "format": "{icon} {percent}%",
   	    "format-icons": ["", ""]
   	},
         "network": {
@@ -98,8 +98,8 @@
         "pulseaudio": {
             "format": "{icon}  {volume}%",
             "format-bluetooth": "{volume}% {icon} {format_source}",
-            "format-bluetooth-muted": " {icon} {format_source}",
-            "format-muted": " {format_source}",
+            "format-bluetooth-muted": "󰝟 {icon} {format_source}",
+            "format-muted": "󰝟 {format_source}",
             "format-icons": {
                 "headphone": "",
                 "hands-free": "",
@@ -111,4 +111,13 @@
             },
             "on-click": "pavucontrol"
         },
+ 	"memory": {
+            "interval": 30,
+            "format": "  {}%",
+            "max-length": 10
+        },
+        "custom/wayves": {
+             "format": "{}",
+             "exec": "python /$HOME/plugins/wayves/wayves.py -o cava -i cava -a cava"
+        }
 }
