@@ -1,0 +1,105 @@
+/* -----------------------------------------------------
+ * Import Pywal colors 
+ * ----------------------------------------------------- */
+@import '/home/zayd/.cache/wal/colors-waybar.css';
+
+/* -----------------------------------------------------
+ * General 
+ * ----------------------------------------------------- */
+
+* {
+    font-family: "CaskaydiaMono Nerd Font";
+	font-weight: 700;
+	background-image: none;
+	transition: 20ms;
+}
+
+window {
+	/* background-color: rgb(60, 56, 50); */
+	background-color: transparent;
+	animation: fadeIn ease-in 0.5s;
+}
+
+button {
+	transition: all ease-in-out 0.2s;
+	color: @color0;
+    font-size:20px;
+
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: 10%;
+
+	border-style: solid;
+	background-color:  @color1;
+	border: 3px solid @color2;
+	border-radius: 20px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* button:focus, */
+button:active,
+button:hover {
+    /* color: #d79921; */
+	background-color: @color3;
+	background-size: 12%;
+	transition: all ease-in-out 0.2s;
+	/* border: 3px solid #cba6f7; */
+}
+
+/* 
+----------------------------------------------------- 
+Buttons
+----------------------------------------------------- 
+*/
+
+#lock {
+	margin: 10px;
+	/* border-radius: 20px; */
+	background-image: image(url("/home/zayd/.config/wlogout/icons/lock.png"));
+}
+
+#logout {
+	margin: 10px;
+	/* border-radius: 20px; */
+	background-image: image(url("/home/zayd/.config/wlogout/icons/logout.png"));
+}
+
+#suspend {
+	margin: 10px;
+	/* border-radius: 20px; */
+	background-image: image(url("/home/zayd/.config/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+	margin: 10px;
+	/* border-radius: 20px; */
+	background-image: image(url("/home/zayd/.config/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+	margin: 10px;
+	/* border-radius: 20px; */
+	background-image: image(url("/home/zayd/.config/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+	margin: 10px;
+	/* border-radius: 20px; */
+	background-image: image(url("/home/zayd/.config/wlogout/icons/reboot.png"));
+}
+
+#reboot:hover,
+#shutdown:hover,
+#hibernate:hover,
+#suspend:hover,
+#logout:hover,
+#lock:hover{
+	padding: 10px;
+}
+
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
