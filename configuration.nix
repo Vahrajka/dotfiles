@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, lib , ... }:
 
 {
   imports =
@@ -11,10 +11,23 @@
     ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
-
+  boot.kernelParams = [ 
+    "intel_idle.max_cstate=4"
+    "quiet"
+    "splash"
+    ]; # In case your laptop hangs randomly
+  boot.kernelModules = [ "hp-wmi" ]; 
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
+    grub = {
+       efiSupport = true;
+       device = "nodev";
+       useOSProber = true;
+    };
+  };
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -71,6 +84,8 @@
     git
     kdePackages.sddm
     gcc
+    mangohud
+    protonup
     xdg-desktop-portal-hyprland
   ];
   fonts.packages = [pkgs.nerd-fonts.caskaydia-mono];
@@ -113,8 +128,78 @@
     sddm ={
       wayland.enable = true;
       enable = true;
-      theme = "sddm-astronaut" ;
       };
     };
- 
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+  # hardware.opengl has beed changed to hardware.graphics
+
+  services.xserver.videoDrivers = ["nvidia"];
+  # services.xserver.videoDrivers = ["amdgpu"];
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    powerManagement.enable = false;
+    powerManagement.finegrained = false;
+    open = false;
+    nvidiaSettings = true;
+    };
+
+  hardware.nvidia.prime = {
+    offload = {
+      enable = true;
+      enableOffloadCmd = true;
+    };
+
+    # integrated
+    # intelBusId = "PCI:0:0:0";
+    intelBusId = "PCI:0:2:0";
+    
+    # dedicated
+    nvidiaBusId = "PCI:1:0:0";
+  };
+
+  specialisation = {
+    gaming-time.configuration = {
+
+      hardware.nvidia = {
+        prime.sync.enable = lib.mkForce true;
+        prime.offload = {
+          enable = lib.mkForce false;
+          enableOffloadCmd = lib.mkForce false;
+        };
+      };
+
+    };
+  };
+
+  programs.steam.enable = true;
+  programs.steam.gamescopeSession.enable = true;
+  programs.gamemode.enable = true;
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS =
+      "\${HOME}/.steam/root/compatibilitytools.d";
+  };
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    # If you want to use JACK applications, uncomment this
+    #jack.enable = true;
+  };
+  services.pipewire.wireplumber.extraConfig.bluetoothEnhancements = {
+  "monitor.bluez.properties" = {
+      "bluez5.enable-sbc-xq" = true;
+      "bluez5.enable-msbc" = true;
+      "bluez5.enable-hw-volume" = true;
+      "bluez5.roles" = [ "hsp_hs" "hsp_ag" "hfp_hf" "hfp_ag" ];
+      };
+  };
+
+
 }
+

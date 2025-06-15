@@ -14,22 +14,37 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "23.05"; # Please read the comment before changing.
-
+  nixpkgs.config.allowUnfree = true;
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
     waybar
+    lshw
+    libnotify
+    lutris
+    alsa-utils
+    brightnessctl
+    heroic
+    shadps4
+    rpcs3
+    mission-center
     rofi
     hyprshot
     hyprpicker
+    pavucontrol
+    blueman
     wlogout
     swaynotificationcenter
     hyprlock
     networkmanagerapplet
     wev
     kitty
+    onlyoffice-desktopeditors
     nixd
+    freecad
     cmatrix
+    bitwarden-desktop
+    libreoffice-qt6
     cava
     pipes-rs
     alacritty
@@ -51,6 +66,7 @@
     ".config/waybar/".source = ./waybar;
     ".config/swaync/".source = ./swaync;
     ".config/wlogout".source = ./wlogout;
+    ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
     ".local/bin/".source = ./bin;
     ".bashrc".source = ./bash/.bashrc;
     };

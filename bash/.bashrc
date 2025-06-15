@@ -24,10 +24,9 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-eval "$(starship init bash)"
 alias ls='lsd'
 alias ll='lsd -la'
-alias rc='nvim ~/nixconf/hyprland/hyprland.conf'
+alias rc='nvim ~/dotfiles/hyprland/hyprland.conf'
 alias vim='nvim'
 
 ### RANDOM COLOR SCRIPT ###
