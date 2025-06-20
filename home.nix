@@ -20,7 +20,16 @@
   home.packages = with pkgs; [
     waybar
     lshw
+    kdePackages.okular
+    popsicle
+    gparted
+    kdePackages.gwenview
+    usbutils
+    glib
+    pywalfox-native
+    numix-cursor-theme
     libnotify
+    nautilus
     lutris
     alsa-utils
     brightnessctl
@@ -51,6 +60,7 @@
     xorg.xrandr
     pywal16
     librewolf
+    mate.mate-polkit
     swww
     fzf
     lsd
@@ -59,8 +69,30 @@
     imagemagick
   ];
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
+home.pointerCursor = {
+  gtk.enable = true;
+  package = pkgs.bibata-cursors;
+  name = "Bibata-Modern-Classic";
+  size = 16;
+};
+
+gtk = {
+  enable = true;
+  theme = {
+    package = pkgs.flat-remix-gtk;
+    name = "Flat-Remix-GTK-Grey-Darkest";
+  };
+
+  iconTheme = {
+    package = pkgs.adwaita-icon-theme;
+    name = "Adwaita";
+  };
+
+  font = {
+    name = "Sans";
+    size = 11;
+  };
+};
   home.file = {
     ".config/hypr/".source = ./hyprland;
     ".config/waybar/".source = ./waybar;
@@ -76,4 +108,5 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
 }
