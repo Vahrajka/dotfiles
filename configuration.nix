@@ -13,10 +13,7 @@
   # Bootloader.
   boot.kernelParams = [ 
     "intel_idle.max_cstate=4"
-    "quiet"
-    "splash"
     ]; # In case your laptop hangs randomly
-  boot.kernelModules = [ "hp-wmi" ]; 
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
@@ -184,7 +181,10 @@
       };
   };
   security.polkit.enable = true;
-
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = ["zayd"];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 
 
 

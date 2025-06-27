@@ -3,9 +3,14 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
-    home-manager.url= "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
-  };
+    home-manager ={
+      url= "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      };
+   
+    ags.url = "github:aylur/ags";
+   };
+    
   
   outputs = { nixpkgs, home-manager, ... } @ inputs:
   let
@@ -25,6 +30,7 @@
     homeConfigurations = {
       zayd = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+	extraSpecialArgs = { inherit inputs; };
         modules = [
 	./home.nix 
 	];

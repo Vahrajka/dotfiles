@@ -1,25 +1,21 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "zayd";
   home.homeDirectory = "/home/zayd";
-
-  # This value determines the Home Manager release that your configuration is
-  # compatible with. This helps avoid breakage when a new Home Manager release
-  # introduces backwards incompatible changes.
-  #
-  # You should not change this value, even if you update Home Manager. If you do
-  # want to update the value, then make sure to first check the Home Manager
-  # release notes.
   home.stateVersion = "23.05"; # Please read the comment before changing.
   nixpkgs.config.allowUnfree = true;
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
   home.packages = with pkgs; [
     waybar
+    libsForQt5.kdeconnect-kde
+    kdePackages.dolphin-plugins
     lshw
+    matugen
+    gjs
+    fastfetch
+    wl-clipboard
     kdePackages.okular
     popsicle
     gparted
@@ -104,6 +100,22 @@ gtk = {
     };
   home.sessionVariables = {
     # EDITOR = "emacs";
+  };
+  imports = [ inputs.ags.homeManagerModules.default ];
+
+  programs.ags = {
+    enable = true;
+    extraPackages = with pkgs; [
+      inputs.ags.packages.${pkgs.system}.battery
+      inputs.ags.packages.${pkgs.system}.network
+      inputs.ags.packages.${pkgs.system}.hyprland
+      inputs.ags.packages.${pkgs.system}.bluetooth
+      inputs.ags.packages.${pkgs.system}.mpris
+      inputs.ags.packages.${pkgs.system}.tray
+      inputs.ags.packages.${pkgs.system}.wireplumber
+      inputs.ags.packages.${pkgs.system}.notifd
+      fzf
+    ];
   };
 
   # Let Home Manager install and manage itself.
