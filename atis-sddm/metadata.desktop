@@ -1,0 +1,14 @@
+[SddmGreeterTheme]
+Author=ru5tyshark
+Comment=Inside a temple somewhere in Skyrim.
+ConfigFile=theme.conf
+Description=Inside a temple somewhere in Skyrim with ambient music.
+Email=ru5tyshark@hotmail.com
+Name=A Temple in Skryim 
+MainScript=Main.qml
+Screenshot=preview.png
+Theme-API=2.0
+Theme-Id=atis
+Type=Application
+Version=0.1
+Website=
