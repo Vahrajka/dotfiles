@@ -9,10 +9,16 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     waybar
+    woeusb
+    protonup
     libsForQt5.kdeconnect-kde
+    libsForQt5.partitionmanager
     kdePackages.dolphin-plugins
     lshw
+    qbittorrent
     matugen
+    waypaper
+    equibop
     gjs
     fastfetch
     wl-clipboard
@@ -63,6 +69,7 @@
     neovim
     kdePackages.dolphin
     imagemagick
+    tree
   ];
 
 home.pointerCursor = {
@@ -94,12 +101,13 @@ gtk = {
     ".config/waybar/".source = ./waybar;
     ".config/swaync/".source = ./swaync;
     ".config/wlogout".source = ./wlogout;
+    ".config/matugen".source = ./matugen;
     ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
-    ".local/bin/".source = ./bin;
     ".bashrc".source = ./bash/.bashrc;
     };
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS =
+      "\\\${HOME}/.steam/root/compatibilitytools.d";
   };
   imports = [ inputs.ags.homeManagerModules.default ];
 

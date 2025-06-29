@@ -94,6 +94,9 @@
     mangohud
     protonup
     xdg-desktop-portal-hyprland
+    (import ./bin/walset-backend.nix { inherit pkgs;})
+    (import ./bin/walset.nix { inherit pkgs;})
+    (import ./bin/wal-cache.nix { inherit pkgs;})
   ];
   fonts.packages = [pkgs.nerd-fonts.caskaydia-mono];
 
