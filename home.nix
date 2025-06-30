@@ -8,13 +8,13 @@
   home.stateVersion = "23.05"; # Please read the comment before changing.
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
-    waybar
     woeusb
     protonup
-    libsForQt5.kdeconnect-kde
-    libsForQt5.partitionmanager
     kdePackages.dolphin-plugins
     lshw
+    gimp
+    vlc
+    killall
     qbittorrent
     matugen
     waypaper
@@ -128,5 +128,8 @@ gtk = {
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
+  programs.waybar ={
+    enable = true;
+    systemd.enable = true;
+    };
 }

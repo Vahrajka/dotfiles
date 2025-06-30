@@ -2,7 +2,7 @@
 
 pkgs.writeShellScriptBin "walset-backend" ''
   # Check if the user provided an argument
-  if [ "$#" -ne 1]; then
+  if [ "$#" -ne 1 ]; then
   echo "Usage: $0 <path_to_image>"
   exit 1
   fi
@@ -20,9 +20,7 @@ pkgs.writeShellScriptBin "walset-backend" ''
   ${pkgs.pywal16}/bin/wal -i "$IMAGE" -n -e
 
   # Refresh waybar
-  pkill -f ${pkgs.waybar}/bin/waybar
-  ${pkgs.waybar}/bin/waybar > /dev/null 2>&1 &
-
+  systemctl --user restart waybar.service
   #change lockscreen
   wal-cache
   # Refresh swaync

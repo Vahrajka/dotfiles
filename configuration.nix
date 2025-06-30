@@ -89,7 +89,6 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
-    kdePackages.sddm
     gcc
     mangohud
     protonup
@@ -97,8 +96,11 @@
     (import ./bin/walset-backend.nix { inherit pkgs;})
     (import ./bin/walset.nix { inherit pkgs;})
     (import ./bin/wal-cache.nix { inherit pkgs;})
+    (callPackage ./sddm-theme.nix {}).sddm-theme
   ];
-  fonts.packages = [pkgs.nerd-fonts.caskaydia-mono];
+  fonts.packages = with pkgs; [nerd-fonts.caskaydia-mono
+	                      (callPackage ./fonts/ArcadeClassic.nix {})
+	                      ];
 
   system.stateVersion = "25.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -112,6 +114,10 @@
     sddm ={
       wayland.enable = true;
       enable = true;
+      theme = "sddm-theme";
+      extraPackages = [ pkgs.libsForQt5.qtmultimedia 
+			pkgs.libsForQt5.qtgraphicaleffects
+		      ];
       };
     };
   hardware.graphics = {
@@ -121,7 +127,6 @@
   # hardware.opengl has beed changed to hardware.graphics
 
   services.xserver.videoDrivers = ["nvidia"];
-  # services.xserver.videoDrivers = ["amdgpu"];
 
   hardware.nvidia = {
     modesetting.enable = true;

@@ -1,17 +1,13 @@
-{ stdenv, fetchurl }:
+{ stdenv }:
 {
-  sddm-theme-dialog = stdenv.mkDerivation rec {
-    pname = "sddm-astronaut-theme";
+  sddm-theme = stdenv.mkDerivation  {
+    pname = "sddm-theme";
     version = "1.0.0";
+    src = ./sddm-theme;
     dontBuild = true;
     installPhase = ''
       mkdir -p $out/share/sddm/themes
-      cp -aR $src $out/share/sddm/themes/sddm-astronaut-theme
+      cp -r $src $out/share/sddm/themes/sddm-theme
     '';
-    src = fetchurl {
-      url = "https://github.com/Keyitdev/sddm-astronaut-theme";
-      sha256 = "VE87Bkypc4cs5GAr4fYqX8xkR1iyPUGwri8FegGI2x4";
-
-    };
   };
 }
