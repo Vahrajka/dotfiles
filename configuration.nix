@@ -100,6 +100,7 @@
   ];
   fonts.packages = with pkgs; [nerd-fonts.caskaydia-mono
 	                      (callPackage ./fonts/ArcadeClassic.nix {})
+	                      (callPackage ./fonts/Electroharmonix.nix {})
 	                      ];
 
   system.stateVersion = "25.05";

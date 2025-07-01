@@ -1,8 +1,8 @@
 {  stdenvNoCC }:
 stdenvNoCC.mkDerivation {
-  pname = "ARCADECLASSIC";
+  pname = "Electroharmonix";
   version = "0.1";
-  src = ./ArcadeClassic/ARCADECLASSIC.TTF;
+  src = ./Electroharmonix/Electroharmonix.otf;
   dontUnpack = true;
   installPhase = ''
     mkdir -p $out/share/fonts/truetype/
