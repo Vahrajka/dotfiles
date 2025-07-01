@@ -8,5 +8,5 @@ pkgs.writeShellScriptBin "wal-cache" ''
   wallpaper_path=$(${pkgs.swww}/bin/swww query | awk '{print $8}')
 
   # Copy the wallpaper to the cache directory (if it's not already there)
-  $cp "$wallpaper_path" "$CACHE_DIR"
+  cp "$wallpaper_path" "$CACHE_DIR"
 ''
