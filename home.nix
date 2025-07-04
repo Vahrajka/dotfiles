@@ -10,6 +10,7 @@
   home.packages = with pkgs; [
     woeusb
     protonup
+    pipeline
     kdePackages.dolphin-plugins
     lshw
     gimp

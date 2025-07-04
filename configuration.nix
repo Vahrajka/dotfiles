@@ -23,6 +23,8 @@
        efiSupport = true;
        device = "nodev";
        useOSProber = true;
+       theme = "${(pkgs.callPackage ./grub-theme.nix {}).grub-theme}/grub/themes/CyberGRUB-2077";
+
     };
   };
   networking.hostName = "nixos"; # Define your hostname.
@@ -96,7 +98,9 @@
     (import ./bin/walset-backend.nix { inherit pkgs;})
     (import ./bin/walset.nix { inherit pkgs;})
     (import ./bin/wal-cache.nix { inherit pkgs;})
+    (import ./bin/brave-search.nix { inherit pkgs;})
     (callPackage ./sddm-theme.nix {}).sddm-theme
+    (callPackage ./grub-theme.nix {}).grub-theme
   ];
   fonts.packages = with pkgs; [nerd-fonts.caskaydia-mono
 	                      (callPackage ./fonts/ArcadeClassic.nix {})
@@ -149,20 +153,6 @@
     
     # dedicated
     nvidiaBusId = "PCI:1:0:0";
-  };
-
-  specialisation = {
-    gaming-time.configuration = {
-
-      hardware.nvidia = {
-        prime.sync.enable = lib.mkForce true;
-        prime.offload = {
-          enable = lib.mkForce false;
-          enableOffloadCmd = lib.mkForce false;
-        };
-      };
-
-    };
   };
 
   programs.steam.enable = true;
