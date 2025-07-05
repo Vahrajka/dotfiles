@@ -54,29 +54,6 @@ button:hover {
     color:  #ff0000;
 }
 
-#clock,
-#cpu,
-#network,
-#memory,
-#temperature,
-#backlight{
-    color: @color2;
-}
-
-#network,
-#bluetooth {
-    color: @color3;
-}
-
-#battery,
-#pulseaudio {
-    color: @color6;
-}
-
-#window {
-    color: @color7;
-}
-
 #pulseaudio,
 #network,
 #memory,
@@ -92,6 +69,7 @@ button:hover {
 .modules-center {
     background-color: @color0;
     padding: 0 10px;
+    color: @color4;
 }
 #battery,
 #memory {
