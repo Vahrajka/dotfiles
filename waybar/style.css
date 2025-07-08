@@ -59,9 +59,9 @@ button:hover {
 #memory,
 #bluetooth,
 #battery,
+#cava,
 #clock,
 #custom-poweroff,
-#window,
 #cpu,
 #tray,
 #temperature,
@@ -69,36 +69,69 @@ button:hover {
 .modules-center {
     background-color: @color0;
     padding: 0 10px;
+}
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#tray,
+#custom-poweroff,
+#clock {
     color: @color4;
 }
-#battery,
+
+#backlight,
+#cpu,
+#temperature,
 #memory {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    color: @color5;
 }
-#tray,
+
+#battery {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+}
+#memory {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+} 
+#tray {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 10px;
+    margin: 0 0 0 20 ;
+} 
 #backlight {
     margin: 0 0 0 20 ;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 30px;
 }
 
-#clock {
-    border-top-left-radius: 10px;
+#custom-poweroff {
+    border-top-left-radius: 30px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    margin: 0 0 0 20 ;
 }
-#custom-poweroff {
-    border-radius: 10px;
-    margin: 0 0 0 10 ;
+#cava {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    color: @color5;
 }
-
-#window,
+#clock {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 10px;
+}
 .modules-center {
     padding: 0 10px;
-    border-radius: 10px;
-    margin: 0 0 0 10 ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 30px;
 }
 
 #battery.charging, #battery.plugged {

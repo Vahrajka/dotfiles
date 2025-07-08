@@ -1,12 +1,13 @@
 /* MACOS SPOTLIGHT LIKE THEME FOR ROFI  */
 /* Author: Newman Sanchez (https://github.com/newmanls) */
 
+@import "/home/zayd/.cache/wal/colors-rofi-light.rasi"
 * {
     font:   "Montserrat 12";
 
     bg0:     #F5F5F5BF;
     bg1:     #7E7E7E80;
-    bg2:     #0860F2E6;
+    bg2:     @active-background;
 
     fg0:     #242424;
     fg1:     #FFFFFF;

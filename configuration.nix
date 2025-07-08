@@ -184,7 +184,7 @@
   users.groups.libvirtd.members = ["zayd"];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
-
+  virtualisation.waydroid.enable = true;
 
 
 }

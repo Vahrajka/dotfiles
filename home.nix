@@ -10,18 +10,28 @@
   home.packages = with pkgs; [
     woeusb
     protonup
+    thonny
+    vscodium
     pipeline
     kdePackages.dolphin-plugins
     lshw
+    cbonsai
+    python313Packages.scipy
+    kdePackages.kdenlive
+    obs-studio
     gimp
+    fastfetch
     vlc
+    ente-auth
+    prismlauncher
     killall
+    alpaca
     qbittorrent
     matugen
     waypaper
     equibop
     gjs
-    fastfetch
+    nitch
     wl-clipboard
     kdePackages.okular
     popsicle
@@ -103,28 +113,13 @@ gtk = {
     ".config/swaync/".source = ./swaync;
     ".config/wlogout".source = ./wlogout;
     ".config/matugen".source = ./matugen;
+    ".config/fastfetch".source = ./fastfetch;
     ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
     ".bashrc".source = ./bash/.bashrc;
     };
   home.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\\\${HOME}/.steam/root/compatibilitytools.d";
-  };
-  imports = [ inputs.ags.homeManagerModules.default ];
-
-  programs.ags = {
-    enable = true;
-    extraPackages = with pkgs; [
-      inputs.ags.packages.${pkgs.system}.battery
-      inputs.ags.packages.${pkgs.system}.network
-      inputs.ags.packages.${pkgs.system}.hyprland
-      inputs.ags.packages.${pkgs.system}.bluetooth
-      inputs.ags.packages.${pkgs.system}.mpris
-      inputs.ags.packages.${pkgs.system}.tray
-      inputs.ags.packages.${pkgs.system}.wireplumber
-      inputs.ags.packages.${pkgs.system}.notifd
-      fzf
-    ];
   };
 
   # Let Home Manager install and manage itself.
