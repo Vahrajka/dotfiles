@@ -1,0 +1,63 @@
+{ config, pkgs, ... }:
+
+{
+  nixpkgs.config.allowUnfree = true;
+  home.packages = with pkgs; [
+    woeusb
+    protonup
+    thonny
+    vscodium
+    grayjay
+    kdePackages.dolphin-plugins
+    lshw
+    python313Packages.ml-collections
+    python313Packages.networkx
+    cbonsai
+    python313Packages.scipy
+    kdePackages.kdenlive
+    obs-studio
+    gimp
+    vlc
+    ente-auth
+    prismlauncher
+    killall
+    alpaca
+    qbittorrent
+    matugen
+    equibop
+    gjs
+    nitch
+    wl-clipboard
+    kdePackages.okular
+    popsicle
+    gparted
+    kdePackages.gwenview
+    usbutils
+    glib
+    libnotify
+    nautilus
+    lutris
+    alsa-utils
+    heroic
+    shadps4
+    rpcs3
+    mission-center
+    wev
+    onlyoffice-desktopeditors
+    nixd
+    freecad
+    bitwarden-desktop
+    libreoffice-qt6
+    alacritty
+    xorg.xrandr
+    librewolf
+    mate.mate-polkit
+    swww
+    fzf
+    lsd
+    neovim
+    kdePackages.dolphin
+    imagemagick
+    tree
+  ];
+}

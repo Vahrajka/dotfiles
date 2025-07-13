@@ -1,187 +1,29 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, lib , ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [
       ./hardware-configuration.nix
+      ./modules/boot.nix
+      ./modules/bluetooth.nix
+      ./modules/locale_time_keyboard.nix
+      ./modules/network.nix
+      ./modules/user.nix
+      ./modules/systempkgs.nix
+      ./modules/graphics.nix
+      ./modules/virtualisation.nix
+      ./modules/audio.nix
+      ./modules/steam.nix
+      ./modules/sddm.nix
+      ./modules/hyprland.nix
+      ./modules/fonts.nix
     ];
-
-  # Bootloader.
-  boot.kernelParams = [ 
-    "intel_idle.max_cstate=4"
-    ]; # In case your laptop hangs randomly
-  boot.loader = {
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot";
-    };
-    grub = {
-       efiSupport = true;
-       device = "nodev";
-       useOSProber = true;
-       #theme = "${(pkgs.callPackage ./grub-themes/CyberGRUB-2077.nix {}).CyberGRUB-2077}/grub/themes/CyberGRUB-2077";
-       theme = "${(pkgs.callPackage ./grub-themes/LainGrubTheme.nix {}).LainGrubTheme}/grub/themes/LainGrubTheme";
-       #theme = "${(pkgs.callPackage ./grub-themes/hollow-knight-grub.nix {}).hollow-knight-grub}/grub/themes/hollow-knight-grub";
-
-    };
-  };
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-  # Enable networking
-  networking.networkmanager.enable = true;
-
-  hardware.bluetooth ={
-    enable = true;
-    powerOnBoot = true;
-    };
   services ={
-    blueman.enable = true;
     gvfs.enable = true;
     udisks2.enable = true;
     };
-  # Set your time zone.
-  time.timeZone = "Europe/Paris";
-
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
-
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "fr_FR.UTF-8";
-    LC_IDENTIFICATION = "fr_FR.UTF-8";
-    LC_MEASUREMENT = "fr_FR.UTF-8";
-    LC_MONETARY = "fr_FR.UTF-8";
-    LC_NAME = "fr_FR.UTF-8";
-    LC_NUMERIC = "fr_FR.UTF-8";
-    LC_PAPER = "fr_FR.UTF-8";
-    LC_TELEPHONE = "fr_FR.UTF-8";
-    LC_TIME = "fr_FR.UTF-8";
-  };
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "fr";
-    variant = "";
-  };
-
-  # Configure console keymap
-  console.keyMap = "fr";
-
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.zayd = {
-    isNormalUser = true;
-    description = "zayd";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
-  };
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  services.flatpak.enable = true;
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    git
-    gcc
-    mangohud
-    protonup
-    xdg-desktop-portal-hyprland
-    (import ./bin/walset-backend.nix { inherit pkgs;})
-    (import ./bin/walset.nix { inherit pkgs;})
-    (import ./bin/wal-cache.nix { inherit pkgs;})
-    (import ./bin/brave-search.nix { inherit pkgs;})
-    (callPackage ./sddm-theme.nix {}).sddm-theme
-    (callPackage ./grub-themes/CyberGRUB-2077.nix {}).CyberGRUB-2077
-    (callPackage ./grub-themes/hollow-knight-grub.nix {}).hollow-knight-grub
-    (callPackage ./grub-themes/LainGrubTheme.nix {}).LainGrubTheme
-  ];
-  fonts.packages = with pkgs; [nerd-fonts.caskaydia-mono
-	                      (callPackage ./fonts/ArcadeClassic.nix {})
-	                      (callPackage ./fonts/Electroharmonix.nix {})
-	                      ];
-
   system.stateVersion = "25.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  programs.hyprland ={
-    enable = true;
-    xwayland.enable = true;
-    };
   programs.starship.enable = true;
-  services.displayManager ={
-    defaultSession = "hyprland" ;
-    sddm ={
-      wayland.enable = true;
-      enable = true;
-      theme = "sddm-theme";
-      extraPackages = [ pkgs.libsForQt5.qtmultimedia 
-			pkgs.libsForQt5.qtgraphicaleffects
-		      ];
-      };
-    };
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
-  # hardware.opengl has beed changed to hardware.graphics
-
-  services.xserver.videoDrivers = ["nvidia"];
-
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
-    open = false;
-    nvidiaSettings = true;
-    };
-
-  hardware.nvidia.prime = {
-    offload = {
-      enable = true;
-      enableOffloadCmd = true;
-    };
-
-    # integrated
-    # intelBusId = "PCI:0:0:0";
-    intelBusId = "PCI:0:2:0";
-    
-    # dedicated
-    nvidiaBusId = "PCI:1:0:0";
-  };
-
-  programs.steam.enable = true;
-  programs.steam.gamescopeSession.enable = true;
-  programs.gamemode.enable = true;
-  environment.sessionVariables = {
-    STEAM_EXTRA_COMPAT_TOOLS_PATHS =
-      "\${HOME}/.steam/root/compatibilitytools.d";
-  };
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
-  };
   security.polkit.enable = true;
-  programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = ["zayd"];
-  virtualisation.libvirtd.enable = true;
-  virtualisation.spiceUSBRedirection.enable = true;
-  virtualisation.waydroid.enable = true;
-
-
-}
+ }
 
