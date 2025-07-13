@@ -23,7 +23,9 @@
        efiSupport = true;
        device = "nodev";
        useOSProber = true;
-       theme = "${(pkgs.callPackage ./grub-theme.nix {}).grub-theme}/grub/themes/CyberGRUB-2077";
+       #theme = "${(pkgs.callPackage ./grub-themes/CyberGRUB-2077.nix {}).CyberGRUB-2077}/grub/themes/CyberGRUB-2077";
+       theme = "${(pkgs.callPackage ./grub-themes/LainGrubTheme.nix {}).LainGrubTheme}/grub/themes/LainGrubTheme";
+       #theme = "${(pkgs.callPackage ./grub-themes/hollow-knight-grub.nix {}).hollow-knight-grub}/grub/themes/hollow-knight-grub";
 
     };
   };
@@ -100,7 +102,9 @@
     (import ./bin/wal-cache.nix { inherit pkgs;})
     (import ./bin/brave-search.nix { inherit pkgs;})
     (callPackage ./sddm-theme.nix {}).sddm-theme
-    (callPackage ./grub-theme.nix {}).grub-theme
+    (callPackage ./grub-themes/CyberGRUB-2077.nix {}).CyberGRUB-2077
+    (callPackage ./grub-themes/hollow-knight-grub.nix {}).hollow-knight-grub
+    (callPackage ./grub-themes/LainGrubTheme.nix {}).LainGrubTheme
   ];
   fonts.packages = with pkgs; [nerd-fonts.caskaydia-mono
 	                      (callPackage ./fonts/ArcadeClassic.nix {})
@@ -170,14 +174,6 @@
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
-  };
-  services.pipewire.wireplumber.extraConfig.bluetoothEnhancements = {
-  "monitor.bluez.properties" = {
-      "bluez5.enable-sbc-xq" = true;
-      "bluez5.enable-msbc" = true;
-      "bluez5.enable-hw-volume" = true;
-      "bluez5.roles" = [ "hsp_hs" "hsp_ag" "hfp_hf" "hfp_ag" ];
-      };
   };
   security.polkit.enable = true;
   programs.virt-manager.enable = true;

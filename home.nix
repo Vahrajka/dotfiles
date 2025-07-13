@@ -12,9 +12,11 @@
     protonup
     thonny
     vscodium
-    pipeline
+    grayjay
     kdePackages.dolphin-plugins
     lshw
+    python313Packages.ml-collections
+    python313Packages.networkx
     cbonsai
     python313Packages.scipy
     kdePackages.kdenlive
@@ -115,6 +117,7 @@ gtk = {
     ".config/matugen".source = ./matugen;
     ".config/fastfetch".source = ./fastfetch;
     ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
+    ".config/waypaper".source = ./waypaper;
     ".bashrc".source = ./bash/.bashrc;
     };
   home.sessionVariables = {
@@ -128,4 +131,5 @@ gtk = {
     enable = true;
     systemd.enable = true;
     };
+services.batsignal.enable = true;
 }

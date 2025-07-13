@@ -25,7 +25,7 @@ fi
 unset rc
 
 alias ls='lsd'
-alias ll='lsd -la'
+alias ll='lsd -lah --group-directories-first'
 alias rc='nvim ~/dotfiles/hyprland/hyprland.conf'
 alias vim='nvim'
 

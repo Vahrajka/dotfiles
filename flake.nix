@@ -7,8 +7,6 @@
       url= "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       };
-   
-    ags.url = "github:aylur/ags";
    };
     
   
@@ -30,7 +28,6 @@
     homeConfigurations = {
       zayd = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-	extraSpecialArgs = { inherit inputs; };
         modules = [
 	./home.nix 
 	];
