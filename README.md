@@ -1,4 +1,3 @@
-![Watch the video](preview/demo.mp4)
 ![Alt text](preview/preview1.png)
 ![Alt text](preview/preview2.png)
 ![Alt text](preview/preview3.png)
