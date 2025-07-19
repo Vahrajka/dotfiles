@@ -4,8 +4,11 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     woeusb
+    kdePackages.partitionmanager
     protonup
     thonny
+    gdu
+    nwg-look
     vscodium
     grayjay
     kdePackages.dolphin-plugins

@@ -20,6 +20,8 @@
         "network",
         "pulseaudio",
         "battery",
+ 	"custom/waypaper",
+	"custom/swaync",
  	"custom/poweroff"
         ],
         "hyprland/workspaces": {
@@ -43,6 +45,16 @@
             "tooltip": false,
             "format": "󰐥",
             "on-click": "wlogout"
+        },
+ 	"custom/swaync": {
+            "tooltip": false,
+            "format": "",
+            "on-click": "swaync-client -t"
+        },
+ 	"custom/waypaper": {
+            "tooltip": false,
+            "format": "",
+            "on-click": "waypaper"
         },
         "cpu": {
             "format": "  {usage}%",

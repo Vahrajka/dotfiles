@@ -16,6 +16,7 @@
       ./modules/sddm.nix
       ./modules/hyprland.nix
       ./modules/fonts.nix
+      ./modules/powermanagement.nix
     ];
   services ={
     gvfs.enable = true;
