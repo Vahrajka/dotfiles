@@ -12,8 +12,8 @@ home.pointerCursor = {
 gtk = {
   enable = true;
   theme = {
-    package = (pkgs.callPackage ./../themes/PywalTheme.nix {}).PywalTheme;
-    name = "PywalTheme";
+    package = pkgs.catppuccin-gtk;
+    name = "catppuccin-gtk";
   };
 
   iconTheme = {
