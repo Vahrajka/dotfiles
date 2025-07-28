@@ -44,7 +44,7 @@
  	"custom/poweroff": {
             "tooltip": false,
             "format": "󰐥",
-            "on-click": "wlogout"
+            "on-click": "wlogout -b 6"
         },
  	"custom/swaync": {
             "tooltip": false,
