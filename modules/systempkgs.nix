@@ -18,4 +18,7 @@
     (callPackage ./../grub-themes/hollow-knight-grub.nix {}).hollow-knight-grub
     (callPackage ./../grub-themes/LainGrubTheme.nix {}).LainGrubTheme
   ];
+  programs.coolercontrol.enable = true;
+  programs.coolercontrol.nvidiaSupport = true;
+
 }

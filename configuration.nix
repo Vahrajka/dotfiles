@@ -26,5 +26,6 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   programs.starship.enable = true;
   security.polkit.enable = true;
+  services.flatpak.enable = true;
  }
 

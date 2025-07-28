@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, unstable, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -39,7 +39,6 @@
     glib
     libnotify
     nautilus
-    lutris
     alsa-utils
     heroic
     shadps4
@@ -63,4 +62,5 @@
     imagemagick
     tree
   ];
+  programs.lutris.enable = true;
 }
