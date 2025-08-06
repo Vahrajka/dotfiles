@@ -17,6 +17,7 @@
       ./modules/hyprland.nix
       ./modules/fonts.nix
       ./modules/powermanagement.nix
+      ./modules/flatpak.nix
     ];
   services ={
     gvfs.enable = true;
@@ -26,6 +27,5 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   programs.starship.enable = true;
   security.polkit.enable = true;
-  services.flatpak.enable = true;
  }
 

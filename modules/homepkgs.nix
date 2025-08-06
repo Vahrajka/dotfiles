@@ -8,9 +8,11 @@
     protonup
     thonny
     gdu
+    lf
     nwg-look
     vscodium
     grayjay
+    jetbrains.pycharm-community-src
     kdePackages.dolphin-plugins
     lshw
     python313Packages.ml-collections
