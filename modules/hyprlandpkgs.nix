@@ -14,6 +14,7 @@
     pipes-rs
     swww
     lsd
+    btop
     pywal16
     pywalfox-native
     cmatrix

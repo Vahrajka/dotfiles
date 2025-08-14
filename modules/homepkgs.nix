@@ -6,9 +6,13 @@
     woeusb
     kdePackages.partitionmanager
     protonup
-    thonny
     gdu
-    lf
+    geogebra6
+    komikku
+    ranger
+    ueberzugpp
+    newsflash
+    inspector
     nwg-look
     vscodium
     grayjay
@@ -23,7 +27,6 @@
     obs-studio
     gimp
     vlc
-    ente-auth
     prismlauncher
     killall
     alpaca

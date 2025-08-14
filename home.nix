@@ -18,6 +18,7 @@
     ".config/fastfetch".source = ./fastfetch;
     ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
     ".config/waypaper".source = ./waypaper;
+    ".config/ranger".source = ./ranger;
     };
 
   home.username = "zayd";
