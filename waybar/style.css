@@ -27,7 +27,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: @color5;
 }
 
 
@@ -70,7 +70,7 @@ button:hover {
 .modules-center {
     background-color: @color0;
     padding: 0 10px;
-    border: 2px solid @color6
+    border: 2px solid @color5
 }
 #pulseaudio,
 #network,
@@ -81,7 +81,7 @@ button:hover {
 #custom-swaync,
 #custom-waypaper,
 #clock {
-    color: @color4;
+    color: @color5;
 }
 
 #backlight,
