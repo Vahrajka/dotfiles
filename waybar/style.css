@@ -70,6 +70,7 @@ button:hover {
 .modules-center {
     background-color: @color0;
     padding: 0 10px;
+    border: 2px solid @color6
 }
 #pulseaudio,
 #network,
@@ -89,7 +90,25 @@ button:hover {
 #memory {
     color: @color5;
 }
-
+#memory,
+#custom-poweroff,
+#battery {
+    border-left: none;
+}
+#backlight,
+#custom-waypaper,
+#tray {
+    border-right: none;
+}
+#pulseaudio,
+#network,
+#bluetooth,
+#cpu,
+#custom-swaync,
+#temperature {
+    border-right: none;
+    border-left: none;
+}
 #battery {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 30px;
