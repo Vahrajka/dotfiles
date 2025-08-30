@@ -9,7 +9,7 @@
       ./modules/network.nix
       ./modules/user.nix
       ./modules/systempkgs.nix
-      ./modules/graphics.nix
+#      ./modules/graphics.nix
       ./modules/virtualisation.nix
       ./modules/audio.nix
       ./modules/steam.nix

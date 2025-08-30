@@ -2,7 +2,7 @@
 
 {
     boot.kernelParams = [ 
-    "intel_idle.max_cstate=4"
+    "splash"
     ];
   boot.loader = {
     efi = {
@@ -19,5 +19,7 @@
 
     };
   };
+  boot.plymouth.enable = true;
+
 
 }

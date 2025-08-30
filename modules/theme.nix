@@ -11,13 +11,17 @@ home.pointerCursor = {
 
 gtk = {
   enable = true;
+  theme = {
+    package = pkgs.tokyonight-gtk-theme;
+    name = "tokyonight-gtk-theme";
+    };
   iconTheme = {
     package = pkgs.adwaita-icon-theme;
     name = "Adwaita";
-  };
+    };
   font = {
     name = "Sans";
     size = 11;
+    };
   };
- };
 }
