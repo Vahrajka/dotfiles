@@ -70,7 +70,7 @@ button:hover {
 .modules-center {
     background-color: @color0;
     padding: 0 10px;
-    border: 2px solid @color5
+    border: 2px solid @color5;
 }
 #pulseaudio,
 #network,

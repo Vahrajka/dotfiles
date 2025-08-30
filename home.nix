@@ -19,6 +19,7 @@
     ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
     ".config/waypaper".source = ./waypaper;
     ".config/ranger".source = ./ranger;
+    ".config/nvim".source = ./nvim;
     };
 
   home.username = "zayd";

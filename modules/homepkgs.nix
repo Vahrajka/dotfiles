@@ -1,4 +1,4 @@
-{ pkgs, unstable, ... }:
+{ pkgs, lib, unstable, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -7,6 +7,19 @@
     kdePackages.partitionmanager
     protonup
     gdu
+    tor-browser
+    kdePackages.dolphin
+    kdePackages.dolphin-plugins
+    kdePackages.ark
+    typst-live
+    unrar
+    gnumake
+    python313Packages.python-lsp-server
+    qalculate-gtk
+    typst
+    pyright
+    lua-language-server
+    tinymist
     geogebra6
     komikku
     ranger
@@ -62,10 +75,12 @@
     swww
     fzf
     lsd
-    neovim
     kdePackages.dolphin
     imagemagick
+    neovim
     tree
   ];
   programs.lutris.enable = true;
+  programs.lutris.protonPackages = [ pkgs.proton-ge-bin ];
+  services.gnome-keyring.enable = true;
 }
