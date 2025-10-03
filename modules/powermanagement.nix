@@ -16,7 +16,6 @@
         CPU_MAX_PERF_ON_BAT = 20;
 
        #Optional helps save long term battery health
-       START_CHARGE_THRESH_BAT0 = 65; # 65 and below it starts to charge
        STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
        WIFI_PWR_ON_BAT = "off";  # Disables WiFi power saving on battery
        WIFI_PWR_ON_AC = "off";   # Disables WiFi power saving when plugged in

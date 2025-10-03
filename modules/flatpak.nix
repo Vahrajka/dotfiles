@@ -10,6 +10,7 @@
       "eu.betterbird.Betterbird"
       "org.thonny.Thonny"
       "com.github.alexhuntley.Plots"
+      "com.usebottles.bottles"
       "io.ente.auth"
 
 

@@ -25,7 +25,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     {'chomosuke/typst-preview.nvim', lazy = false, version = '1.*', opts = {}, },
-    {"folke/tokyonight.nvim", lazy = false, priority = 1000, opts = {}, },
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
     {
     'neovim/nvim-lspconfig',
     dependencies = {
@@ -52,4 +52,4 @@ require("lazy").setup({
   checker = { enabled = true },
   lockfile = "/home/zayd/dotfiles/nvim/lazy-lock.json",
 })
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("gruvbox")

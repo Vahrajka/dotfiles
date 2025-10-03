@@ -14,6 +14,7 @@
     typst-live
     unrar
     gnumake
+    arduino
     python313Packages.python-lsp-server
     qalculate-gtk
     typst
