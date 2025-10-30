@@ -18,6 +18,7 @@
       ./modules/fonts.nix
       ./modules/powermanagement.nix
       ./modules/flatpak.nix
+      ./modules/noctalia.nix
     ];
   services ={
     gvfs.enable = true;

@@ -1,4 +1,4 @@
-general.import = ["/home/zayd/.cache/wal/colors-alacritty.toml",]
+general.import = ["/home/zayd/.config/alacritty/colors.toml",]
 
 [window]
 padding = { x = 10, y = 5 }

@@ -9,8 +9,16 @@
       url= "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
       };
-   };
-    
+    quickshell = {
+      url = "github:outfoxxed/quickshell";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      };
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
+      inputs.quickshell.follows = "quickshell";
+      };
+  }; 
   
   outputs = { nixpkgs, nix-flatpak, nixpkgs-unstable, home-manager, ... } @ inputs:
   let
@@ -20,22 +28,17 @@
   in 
   {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { 
-          inherit inputs;
-          inherit system;
-          inherit unstable;
-        };
+        specialArgs = { inherit inputs system unstable; };
         modules =[
         ./configuration.nix
 	nix-flatpak.nixosModules.nix-flatpak
+	home-manager.nixosModules.home-manager
         ];
       };
     homeConfigurations = {
       zayd = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = {
-	  inherit unstable;
-          };
+        extraSpecialArgs = { inherit unstable inputs; };
         modules = [
 	./home.nix
 	];

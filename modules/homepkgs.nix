@@ -4,17 +4,19 @@
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     woeusb
+    gtk2
     kdePackages.partitionmanager
     protonup
     gdu
+    chromium
     tor-browser
     kdePackages.dolphin
     kdePackages.dolphin-plugins
     kdePackages.ark
+    arduino
     typst-live
     unrar
     gnumake
-    arduino
     python313Packages.python-lsp-server
     qalculate-gtk
     typst

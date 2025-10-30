@@ -1,0 +1,20 @@
+# User-defined templates
+# Add your custom templates below
+# Example:
+# [templates.myapp]
+# input_path = "~/.config/noctalia/templates/myapp.css"
+# output_path = "~/.config/myapp/theme.css"
+# post_hook = "myapp --reload-theme"
+
+# Remove this section and add your own templates
+#[templates.placeholder]
+#input_path = "/nix/store/5an25v58vk62v48q1i5innbsd403bp0c-noctalia-shell-1456b674aad3f2e56f40bb9ca3a2eab06010e9e1/share/noctalia-shell/Assets/MatugenTemplates/noctalia.json"
+#output_path = "/home/zayd/.cache/noctalia/placeholder.json"
+
+[config]
+
+# Example: Theme Alacritty terminal
+[templates.alacritty]
+input_path = "~/.config/noctalia/templates/alacritty.toml"
+output_path = "~/.config/alacritty/colors.toml"
+post_hook = "echo 'Alacritty theme updated'"
