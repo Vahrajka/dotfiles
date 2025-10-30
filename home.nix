@@ -1,4 +1,4 @@
-{ config, pkgs, unstable, ... }:
+{ config, pkgs, unstable,... }:
 
 {
   imports = [
@@ -15,6 +15,8 @@
     ".config/swaync/".source = ./swaync;
     ".config/wlogout".source = ./wlogout;
     ".config/matugen".source = ./matugen;
+    ".config/noctalia/user-templates.toml".source = ./noctalia/user-templates.toml;
+    ".config/noctalia/templates".source = ./noctalia/templates;
     ".config/fastfetch".source = ./fastfetch;
     ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
     ".config/waypaper".source = ./waypaper;
@@ -24,7 +26,7 @@
 
   home.username = "zayd";
   home.homeDirectory = "/home/zayd";
-  home.stateVersion = "23.05"; # Please read the comment before changing.
+  home.stateVersion = "25.05"; # Please read the comment before changing.
      home.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\\\${HOME}/.steam/root/compatibilitytools.d";

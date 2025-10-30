@@ -9,7 +9,6 @@
     rofi
     wlogout
     hyprlock
-    kitty
     cava
     pipes-rs
     swww
