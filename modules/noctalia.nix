@@ -1,11 +1,15 @@
 { pkgs, inputs, ... }:
 {
+  imports = [
+    inputs.noctalia.nixosModules.default
+  ];
+  services.noctalia-shell.enable = true;
+
   home-manager.users.zayd = {
     imports = [
       inputs.noctalia.homeModules.default
       ../home.nix
     ];
-
     programs.noctalia-shell = {
       enable = true;
       settings = {
@@ -199,6 +203,7 @@
           backgroundOpacity = 1;
           floatingRatio = 1;
           size = 1;
+	  enabled = false;
           onlySameOutput = true;
           monitors = [ ];
           pinnedApps = [ ];
