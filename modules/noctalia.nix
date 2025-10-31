@@ -8,7 +8,6 @@
   home-manager.users.zayd = {
     imports = [
       inputs.noctalia.homeModules.default
-      ../home.nix
     ];
     programs.noctalia-shell = {
       enable = true;

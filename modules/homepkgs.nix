@@ -1,7 +1,6 @@
 { pkgs, lib, unstable, ... }:
 
 {
-  nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     woeusb
     gtk2
