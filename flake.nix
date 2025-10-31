@@ -28,23 +28,22 @@
   in 
   {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs system unstable; };
+        specialArgs = { inherit inputs system unstable nixpkgs; };
         modules =[
         ./configuration.nix
 	nix-flatpak.nixosModules.nix-flatpak
 	home-manager.nixosModules.home-manager
-        ];
-      };
-    homeConfigurations = {
-      zayd = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        extraSpecialArgs = { inherit unstable inputs; };
-        modules = [
-	./home.nix
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+	    extraSpecialArgs = { inherit system inputs; };
+            users.zayd = import ./home.nix;
+            backupFileExtension = "backup";
+            };
+          }
 	];
       };
-
-    };
 
   };
 }
