@@ -25,6 +25,14 @@
     gvfs.enable = true;
     udisks2.enable = true;
     };
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+    };
+  networking.firewall.allowedTCPPorts = [ 53317 ];
+  networking.firewall.allowedUDPPorts = [ 53317 5353 ];
+
   system.stateVersion = "25.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   programs.starship.enable = true;
