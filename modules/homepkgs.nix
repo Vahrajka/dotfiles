@@ -7,7 +7,9 @@
     kdePackages.partitionmanager
     protonup
     gdu
+    localsend
     chromium
+    brave
     tor-browser
     kdePackages.dolphin
     kdePackages.dolphin-plugins
@@ -31,7 +33,6 @@
     nwg-look
     vscodium
     grayjay
-    jetbrains.pycharm-community-src
     kdePackages.dolphin-plugins
     lshw
     python313Packages.ml-collections
