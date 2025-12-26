@@ -5,34 +5,27 @@
     woeusb
     gtk2
     kdePackages.partitionmanager
-    protonup
     gdu
+    adw-gtk3
+    qt6Packages.qt6ct
     localsend
-    chromium
     brave
-    tor-browser
     kdePackages.dolphin
     kdePackages.dolphin-plugins
     kdePackages.ark
     arduino
-    typst-live
     unrar
     gnumake
     python313Packages.python-lsp-server
     qalculate-gtk
-    typst
     pyright
     lua-language-server
     tinymist
-    geogebra6
-    komikku
     ranger
     ueberzugpp
-    newsflash
     inspector
     nwg-look
     vscodium
-    grayjay
     kdePackages.dolphin-plugins
     lshw
     python313Packages.ml-collections
@@ -45,7 +38,6 @@
     vlc
     prismlauncher
     killall
-    alpaca
     qbittorrent
     matugen
     equibop
@@ -54,7 +46,6 @@
     wl-clipboard
     kdePackages.okular
     popsicle
-    gparted
     kdePackages.gwenview
     usbutils
     glib
@@ -62,13 +53,10 @@
     nautilus
     alsa-utils
     heroic
-    shadps4
-    rpcs3
     mission-center
     wev
     onlyoffice-desktopeditors
     nixd
-    freecad
     bitwarden-desktop
     libreoffice-qt6
     alacritty

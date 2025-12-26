@@ -24,6 +24,7 @@
     ".config/nvim".source = ./nvim;
     };
 
+
   home.username = "zayd";
   home.homeDirectory = "/home/zayd";
   home.stateVersion = "25.05"; # Please read the comment before changing.

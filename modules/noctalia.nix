@@ -66,7 +66,11 @@
               {
                 id = "Brightness";
               }
-              {
+	      {
+	        id = "Battery";
+		displayMode = "alwaysShow";
+              }
+	      {
                 id = "Clock";
               }
               {
@@ -124,12 +128,6 @@
           transitionDuration = 1500;
           transitionType = "random";
           transitionEdgeSmoothness = 0.05;
-          monitors = [ {
-                directory = "/home/zayd/dotfiles/wallpapers";
-                name = "eDP-1";
-                wallpaper = "/home/zayd/dotfiles/wallpapers/cat.jpg";
-            }
-            ];
         };
         appLauncher = {
           enableClipboardHistory = false;

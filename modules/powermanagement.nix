@@ -21,4 +21,6 @@
        WIFI_PWR_ON_AC = "off";   # Disables WiFi power saving when plugged in
       };
 };
+  services.upower.enable = true;
+
 }
