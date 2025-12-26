@@ -6,5 +6,4 @@
     description = "zayd";
     extraGroups = [ "networkmanager" "wheel" "dialout" ];
   };
-
 }

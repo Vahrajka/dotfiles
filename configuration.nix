@@ -20,6 +20,7 @@
       ./modules/powermanagement.nix
       ./modules/flatpak.nix
       ./modules/noctalia.nix
+      ./modules/garbageCollection.nix
     ];
   services ={
     gvfs.enable = true;
