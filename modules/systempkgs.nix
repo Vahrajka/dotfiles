@@ -10,6 +10,9 @@
     gcc
     mangohud
     xdg-desktop-portal-hyprland
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome
+    xwayland-satellite
     (import ./../bin/wal-cache.nix { inherit pkgs;})
     (import ./../bin/brave-search.nix { inherit pkgs;})
     (callPackage ./../sddm-theme/sddm-theme.nix {}).sddm-theme
