@@ -19,6 +19,7 @@
     ".config/noctalia/templates".source = ./noctalia/templates;
     ".config/fastfetch".source = ./fastfetch;
     ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
+    ".config/niri".source = ./niri;
     ".config/waypaper".source = ./waypaper;
     ".config/ranger".source = ./ranger;
     ".config/nvim".source = ./nvim;

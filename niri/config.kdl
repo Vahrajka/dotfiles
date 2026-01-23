@@ -126,6 +126,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+B hotkey-overlay-title="Open librewolf" { spawn "librewolf"; }
     Mod+E hotkey-overlay-title="Open nautilus" { spawn "nautilus"; }
+    Mod+Shift+Q hotkey-overlay-title="Shutdown" { spawn "shutdown now"; }
     Mod+Space hotkey-overlay-title="Run an Application: noctalia" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
     Mod+F12 hotkey-overlay-title="Wallpaper picker" { spawn-sh "noctalia-shell ipc call wallpaper toggle"; }
 Ctrl+F12 hotkey-overlay-title="Random wallpaper" { spawn-sh "noctalia-shell ipc call wallpaper random"; }
