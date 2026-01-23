@@ -4,8 +4,10 @@
   home.packages = with pkgs; [
     woeusb
     gtk2
+    fortune
     kdePackages.partitionmanager
     gdu
+    readest
     adw-gtk3
     qt6Packages.qt6ct
     localsend

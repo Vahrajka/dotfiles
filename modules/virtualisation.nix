@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   programs.virt-manager.enable = true;
@@ -8,6 +8,9 @@
     spiceUSBRedirection.enable = true;
     waydroid.enable = true;
     };
+  virtualisation.libvirtd.qemu.package = pkgs.qemu_kvm;
+  hardware.graphics.enable = true;
+
 }
 
 

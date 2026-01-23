@@ -9,6 +9,7 @@
     git
     gcc
     mangohud
+    linuxKernel.packages.linux_zen.xone
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
     xdg-desktop-portal-gnome
