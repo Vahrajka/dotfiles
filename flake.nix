@@ -22,10 +22,27 @@
     unstable = nixpkgs-unstable.legacyPackages.${system}; 
   in 
   {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.victus = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs system unstable nixpkgs; };
         modules =[
-        ./configuration.nix
+        ./configs/victus.nix
+	nix-flatpak.nixosModules.nix-flatpak
+	home-manager.nixosModules.home-manager
+        {
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+	    extraSpecialArgs = { inherit system inputs; };
+            users.zayd = import ./home.nix;
+            backupFileExtension = "backup";
+            };
+          }
+	];
+      };
+    nixosConfigurations.thinkpad = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs system unstable nixpkgs; };
+        modules =[
+        ./thinkpad.nix
 	nix-flatpak.nixosModules.nix-flatpak
 	home-manager.nixosModules.home-manager
         {
