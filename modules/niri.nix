@@ -2,5 +2,4 @@
 
 {
   programs.niri.enable = true;
-
 }
