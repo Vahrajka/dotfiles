@@ -15,7 +15,6 @@
     xdg-desktop-portal
     xdg-desktop-portal-gnome
     (import ./../bin/wal-cache.nix { inherit pkgs;})
-    (import ./../bin/protonhax.nix { inherit pkgs;})
     (import ./../bin/brave-search.nix { inherit pkgs;})
     (callPackage ./../sddm-theme/sddm-theme.nix {}).sddm-theme
     (callPackage ./../sddm-theme/darkouls-sddm.nix {}).darksouls-sddm
