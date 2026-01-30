@@ -42,7 +42,7 @@
     nixosConfigurations.thinkpad = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs system unstable nixpkgs; };
         modules =[
-        ./thinkpad.nix
+        ./configs/thinkpad.nix
 	nix-flatpak.nixosModules.nix-flatpak
 	home-manager.nixosModules.home-manager
         {
