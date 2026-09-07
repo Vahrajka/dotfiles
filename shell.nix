@@ -5,7 +5,6 @@ pkgs.mkShell {
   name = "python-env";
 
   buildInputs = [
-    pkgs.python313Full
     pkgs.python313Packages.matplotlib
     pkgs.python313Packages.pandas
     pkgs.python313Packages.jupyter

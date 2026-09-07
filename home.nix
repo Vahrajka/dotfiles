@@ -1,4 +1,4 @@
-{ config, pkgs, unstable,... }:
+{ inputs, ... }:
 
 {
   imports = [
@@ -28,7 +28,7 @@
 
   home.username = "zayd";
   home.homeDirectory = "/home/zayd";
-  home.stateVersion = "25.05"; # Please read the comment before changing.
+  home.stateVersion = "25.11"; # Please read the comment before changing.
      home.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS =
       "\\\${HOME}/.steam/root/compatibilitytools.d";

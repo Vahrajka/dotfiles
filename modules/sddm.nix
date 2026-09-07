@@ -2,11 +2,11 @@
 
 {
   services.displayManager ={
-    defaultSession = "hyprland" ;
+    defaultSession = "niri" ;
     sddm ={
       wayland.enable = true;
       package = pkgs.kdePackages.sddm ;
-      enable = true;
+      enable = false;
       theme = "darksouls-sddm";
       extraPackages = [ pkgs.kdePackages.qtmultimedia 
 			pkgs.kdePackages.qtquickeffectmaker
@@ -15,5 +15,6 @@
 			pkgs.kdePackages.qtvirtualkeyboard
 		      ];
 	 };
+   ly.enable = true;
     };
 }

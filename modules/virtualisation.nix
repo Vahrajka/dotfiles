@@ -7,6 +7,10 @@
     libvirtd.enable = true;
     spiceUSBRedirection.enable = true;
     waydroid.enable = true;
+    podman = {
+      enable = true;
+      dockerCompat = true;
+      };
     };
   virtualisation.libvirtd.qemu.package = pkgs.qemu_kvm;
   hardware.graphics.enable = true;

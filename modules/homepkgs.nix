@@ -1,13 +1,23 @@
-{ pkgs, lib, unstable, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
     woeusb
+    quickshell
+    noctalia-shell
+    kdePackages.qtdeclarative
+    neovide
+    virtiofsd
+    android-tools
+    unityhub
+    libadwaita
+    spicetify-cli
     gtk2
     fortune
     kdePackages.partitionmanager
     gdu
     readest
+    sigil
     adw-gtk3
     qt6Packages.qt6ct
     localsend
@@ -62,10 +72,10 @@
     bitwarden-desktop
     libreoffice-qt6
     alacritty
-    xorg.xrandr
+    xrandr
     librewolf
-    mate.mate-polkit
-    swww
+    mate-polkit
+    awww
     fzf
     lsd
     kdePackages.dolphin
@@ -73,7 +83,7 @@
     neovim
     tree
   ];
-  programs.lutris.enable = true;
+  programs.lutris.enable = false;
   programs.lutris.protonPackages = [ pkgs.proton-ge-bin ];
   services.gnome-keyring.enable = true;
 }

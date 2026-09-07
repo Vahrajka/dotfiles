@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -18,9 +18,8 @@
       ./../modules/hyprland.nix
       ./../modules/fonts.nix
       ./../modules/powermanagement.nix
-      ./../modules/flatpak.nix
-      ./../modules/noctalia.nix
       ./../modules/garbageCollection.nix
+      ./../modules/flatpak.nix
     ];
   services ={
     gvfs.enable = true;
@@ -33,7 +32,7 @@
     };
   networking.firewall.allowedTCPPorts = [ 53317 ];
   networking.firewall.allowedUDPPorts = [ 53317 5353 ];
-  
+  nix.optimise.automatic = true;
   networking.hostName = "thinkpad";
   system.stateVersion = "25.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
