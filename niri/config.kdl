@@ -89,6 +89,7 @@ layout {
 spawn-at-startup "xdg-desktop-portal-gtk"
 spawn-at-startup "xdg-desktop-portal-gnome"
 spawn-at-startup "noctalia-shell"
+spawn-at-startup "undervolt"
 spawn-at-startup "/nix/store/0g8k2zaxbjrj0z9i92sfp7cq9y2r392f-mate-polkit-1.28.1/libexec/polkit-mate-authentication-agent-1"
 
 hotkey-overlay {
